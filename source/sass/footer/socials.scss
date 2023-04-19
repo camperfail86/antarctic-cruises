@@ -1,0 +1,46 @@
+.socials__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.socials {
+  display: flex;
+  align-self: center;
+}
+
+.socials__item {
+  margin-right: 27px;
+  align-items: center;
+  display: flex;
+}
+
+@media (max-width: 1023px) {
+  .socials__image {
+    width: 16px;
+    height: 16px;
+    margin-bottom: 30px;
+  }
+
+  .socials__item {
+    margin-right: 22px;
+  }
+
+  .socials {
+    align-self: flex-start;
+  }
+
+  .socials__item a {
+    height: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .socials {
+    margin-top: 30px;
+  }
+
+  .socials__item a {
+    height: 20px;
+  }
+}

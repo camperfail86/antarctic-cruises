@@ -1,0 +1,84 @@
+.travel {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  margin: 0 auto;
+  width: 1160px;
+  padding: 120px 0;
+}
+
+.travel__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  color: $color-black;
+  width: 430px;
+  padding-top: 65px;
+  margin: 0 0 40px 0;
+}
+
+.travel__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: $color-black;
+  width: 512px;
+  margin: 0;
+}
+
+.travel__image {
+  width: 560px;
+  height: 301px;
+  margin-left: 88px;
+}
+
+@media (min-width: 1024px) and (max-width: 1260px) {
+  .travel {
+    width: 960px;
+  }
+}
+
+
+@media (max-width: 1023px) {
+  .travel__image {
+    width: 324px;
+    height: 175px;
+    margin-left: 30px;
+  }
+
+  .travel__title {
+    width: 221px;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .travel__text {
+    width: 324px;
+  }
+
+  .travel {
+    padding: 100px 0;
+    margin: 0 auto;
+    width: 678px;
+  }
+}
+
+@media (max-width: 767px) {
+  .travel {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 290px;
+    padding-top: 65px;
+    padding-bottom: 85px;
+  }
+
+  .travel__text {
+    width: 290px;
+  }
+
+  .travel__image {
+    margin-left: 0;
+    margin-top: 50px;
+    width: 290px;
+    height: 155px;
+  }
+}

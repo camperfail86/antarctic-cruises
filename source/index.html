@@ -5,27 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
+    <title>Круизы в Антарктику</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="header">
+        <div class="header__container">
+          <picture class="header__image">
+            <source media="(max-width: 767px)" srcset="img/sprite/logo-mobile.svg">
+            <source media="(max-width: 1023px)" srcset="img/sprite/logo-tablet.svg">
+            <img src="img/sprite/logo.svg" alt="Логотип.">
+          </picture>
+          <nav class="header__navigation">
+            <ul class="header__list">
+              <li class="header__item">Преимущества</li>
+              <li class="header__item">Направления</li>
+              <li class="header__item">Ближайшие круизы</li>
+              <li class="header__item">Контакты</li>
+            </ul>
+            <button class="header__menu"><span class=""></span></button>
+          </nav>
+        </div>
       </header>
-      <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+      <main class="main">
+        <section class="main-page">
+          <h1 class="main-page__title">Круизы в Антарктику</h1>
+          <p class="main-page__text">Волшебный мир айсбергов и пингвинов</p>
+        </section>
+        <section class="travel">
+          <div class="travel__info">
+            <h2 class="travel__title">Путешествие на край Земли</h2>
+            <p class="travel__text">Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
           </div>
+          <picture class="travel__image">
+            <source media="(max-width: 767px)" srcset="img/images/travel-mobile.jpg">
+            <source media="(max-width: 1023px)" srcset="img/images/travel-tablet.jpg">
+            <img src="img/images/travel.jpg" alt="Пингвины.">
+          </picture>
         </section>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__navigation">
+            <picture class="footer__image">
+              <source media="(max-width: 767px)" srcset="img/sprite/logo-mobile.svg">
+              <source media="(max-width: 1023px)" srcset="img/sprite/logo-tablet.svg">
+              <img src="img/sprite/logo.svg" alt="Логотип.">
+            </picture>
+            <nav class="footer__navigation">
+              <ul class="footer__list">
+                <li class="footer__item">Преимущества</li>
+                <li class="footer__item">Направления</li>
+                <li class="footer__item">Ближайшие круизы</li>
+                <li class="footer__item">Контакты</li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__socials socials">
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a href="">
+                  <img class="socials__image" src="img/svg/ok.svg" alt="">
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="">
+                  <img class="socials__image" src="img/svg/star.svg" alt="">
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="">
+                  <img class="socials__image" src="img/svg/reddit.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </footer>
     </div>
 
