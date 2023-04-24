@@ -572,6 +572,10 @@ button,
   display: none;
 }
 
+.br-desk {
+  display: none;
+}
+
 .wrapper {
   position: relative;
   display: -webkit-box;
@@ -1465,13 +1469,13 @@ button,
   background-size: cover;
   min-height: 650px;
   margin-top: -73px;
-  padding-top: 283px;
+  padding-top: 270px;
   padding-left: 198px;
   padding-bottom: 247px;
 }
 
 .main-page__title {
-  margin: 0 0 30px 0;
+  margin: 0 0 12px 0;
   font-weight: 700;
   font-size: 54px;
   line-height: 66px;
@@ -1493,7 +1497,7 @@ button,
   display: flex;
   margin: 0 auto;
   width: 1160px;
-  padding: 120px 0;
+  padding: 120px 0 145px 0;
 }
 
 .travel__title {
@@ -1502,8 +1506,8 @@ button,
   line-height: 150%;
   color: #011c40;
   width: 430px;
-  padding-top: 65px;
-  margin: 0 0 40px 0;
+  margin: 0 0 24px 0;
+  padding-top: 56px;
 }
 
 .travel__text {
@@ -1524,8 +1528,8 @@ button,
 .advantages {
   font-family: "Montserrat", sans-serif;
   color: #011c40;
-  padding-top: 120px;
-  padding-bottom: 170px;
+  padding-top: 110px;
+  padding-bottom: 118px;
   background-image: url("../../img/images/advantages.png");
   background-size: cover;
 }
@@ -1534,7 +1538,7 @@ button,
   font-weight: 600;
   font-size: 28px;
   line-height: 150%;
-  margin: 0 auto 60px auto;
+  margin: 0 auto 49px auto;
   width: 228px;
 }
 
@@ -1563,12 +1567,17 @@ button,
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  margin-bottom: 20px;
-  margin-top: 25px;
+  margin-bottom: 7px;
+  margin-top: 19px;
 }
 
 .point__text {
   margin: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
 }
 
 .booking {
@@ -1590,10 +1599,10 @@ button,
   font-weight: 700;
   font-size: 40px;
   line-height: 150%;
-  margin-bottom: 30px;
-  margin-top: 178px;
+  margin-bottom: 8px;
   width: 494px;
   color: #011c40;
+  margin-top: 163px;
 }
 
 .booking__text {
@@ -1607,9 +1616,9 @@ button,
 
 .form {
   background-color: #011c40;
-  padding: 50px;
+  padding: 44px 50px 50px 50px;
   font-family: "Montserrat", sans-serif;
-  margin-left: 144px;
+  margin-left: 143px;
   min-height: 455px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1625,7 +1634,7 @@ button,
   font-size: 18px;
   line-height: 150%;
   color: #f9fbfd;
-  margin-bottom: 35px;
+  margin-bottom: 27px;
   margin-top: 0;
   width: 303px;
 }
@@ -1737,14 +1746,14 @@ button,
 .form__button {
   background-color: #f9fbfd;
   font-family: "Montserrat", sans-serif;
-  margin-top: 35px;
+  margin-top: 30px;
   color: #011c40;
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
   border: none;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 12px;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1763,7 +1772,7 @@ button,
 
 .cruises {
   background-color: #f9fbfd;
-  padding: 95px 0 120px 0;
+  padding: 85px 0 120px 0;
   color: #f9fbfd;
   font-family: "Montserrat", sans-serif;
 }
@@ -1773,13 +1782,13 @@ button,
   font-size: 28px;
   line-height: 150%;
   color: #011c40;
-  margin: 0 auto 60px auto;
+  margin: 0 auto 49px auto;
   width: 302px;
 }
 
 .cruises__item {
   background-color: #011c40;
-  padding: 35px 25px 0 25px;
+  padding: 29px 25px 0 25px;
   font-family: "Montserrat", sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1862,15 +1871,15 @@ button,
 }
 
 .cruises__mini-title--first {
-  margin-top: 295px;
-  margin-bottom: 15px;
+  margin-top: 308px;
+  margin-bottom: 22px;
 }
 
 .cruises__mini-text {
   font-weight: 500;
   font-size: 14px;
   line-height: 140%;
-  margin: 10px 0 0 0;
+  margin: 13px 0 0 0;
 }
 
 .cruises__mini-info {
@@ -1884,7 +1893,7 @@ button,
 .cruises__button {
   background-color: #f9fbfd;
   font-family: "Montserrat", sans-serif;
-  margin-top: 20px;
+  margin-top: 26px;
   color: #011c40;
   font-weight: 600;
   font-size: 14px;
@@ -1916,14 +1925,14 @@ button,
   display: -ms-flexbox;
   display: flex;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 113px;
   width: 1160px;
   margin: 0 auto;
 }
 
 .contacts__title {
   width: 500px;
-  margin: 0 0 45px 0;
+  margin: 75px 0 32px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -1932,7 +1941,7 @@ button,
 }
 
 .contacts__address {
-  margin: 0 0 33px 0;
+  margin: 0 0 21px;
   padding-left: 28px;
   position: relative;
   display: block;
@@ -2008,6 +2017,28 @@ button,
     }
   }
 */
+
+@media (min-width: 1024px) {
+  .br-desk {
+    display: block;
+  }
+
+  .header__navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .header__list {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .socials__item:last-child {
+    margin-right: 0;
+  }
+}
 
 @media (max-width: 1439px) {
   .container {
@@ -2505,7 +2536,7 @@ button,
     flex-direction: column;
     margin: 0 auto;
     width: 290px;
-    padding-top: 57px;
+    padding-top: 66px;
     padding-bottom: 85px;
   }
 
@@ -2656,7 +2687,8 @@ button,
   }
 
   .cruises__mini-title--first {
-    margin-top: 313px;
+    margin-top: 314px;
+    margin-bottom: 8px;
   }
 
   .cruises__mini-text {

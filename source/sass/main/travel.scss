@@ -3,7 +3,7 @@
   display: flex;
   margin: 0 auto;
   width: 1160px;
-  padding: 120px 0;
+  padding: 120px 0 145px 0;
 }
 
 .travel__title {
@@ -12,8 +12,8 @@
   line-height: 150%;
   color: $color-black;
   width: 430px;
-  padding-top: 65px;
-  margin: 0 0 40px 0;
+  margin: 0 0 24px 0;
+  padding-top: 56px;
 }
 
 .travel__text {
@@ -73,7 +73,7 @@
     flex-direction: column;
     margin: 0 auto;
     width: 290px;
-    padding-top: 57px;
+    padding-top: 66px;
     padding-bottom: 85px;
   }
 

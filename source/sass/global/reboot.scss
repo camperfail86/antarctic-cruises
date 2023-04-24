@@ -145,6 +145,16 @@ button,
   display: none;
 }
 
+.br-desk {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .br-desk {
+    display: block;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .br-tablet {
     display: block;

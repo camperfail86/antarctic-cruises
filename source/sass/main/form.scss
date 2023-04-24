@@ -1,8 +1,8 @@
 .form {
   background-color: $color-black;
-  padding: 50px;
+  padding: 44px 50px 50px 50px;
   font-family: "Montserrat", sans-serif;
-  margin-left: 144px;
+  margin-left: 143px;
   min-height: 455px;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
   font-size: 18px;
   line-height: 150%;
   color: $color-white;
-  margin-bottom: 35px;
+  margin-bottom: 27px;
   margin-top: 0;
   width: 303px;
 }
@@ -91,14 +91,14 @@
 .form__button {
   background-color: $color-white;
   font-family: "Montserrat", sans-serif;
-  margin-top: 35px;
+  margin-top: 30px;
   color: $color-black;
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
   border: none;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 12px;
   cursor: pointer;
   display: flex;
   align-items: center;

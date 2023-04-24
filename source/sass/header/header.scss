@@ -45,6 +45,16 @@
   height: 38px;
 }
 
+@media (min-width: 1024px) {
+  .header__navigation {
+    display: flex;
+  }
+
+  .header__list {
+    align-items: center;
+  }
+}
+
 @media (min-width: 1024px) and (max-width: 1260px) {
   .header__container {
     margin: 35px auto 0 auto;
