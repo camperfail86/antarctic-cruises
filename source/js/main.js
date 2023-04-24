@@ -31,6 +31,24 @@ let maskOptions = {
 };
 const mask = new IMask(element, maskOptions);
 
+const burger = document.querySelector('.header__menu');
+const menu = document.querySelector('.header__navigation--mobile');
+const x = document.querySelector('.header__menu--close-button');
+const image = document.querySelector('.header__image');
+
+burger.addEventListener('click', () => {
+  if (menu.classList.contains('disp') === true) {
+    menu.classList.remove('disp');
+    image.classList.add('disp');
+    burger.classList.add('disp');
+  }
+});
+
+x.addEventListener('click', () => {
+  menu.classList.add('disp');
+  image.classList.remove('disp');
+  burger.classList.remove('disp');
+});
 
 // const mapOptions = {
 //   center: [17.385044, 78.486671],

@@ -38,17 +38,39 @@
             </ul>
             <button class="header__menu"><span class=""></span></button>
           </nav>
+          <nav class="header__navigation--mobile disp">
+            <ul class="header__list--mobile">
+              <div class="header__list--images">
+                <img src="img/sprite/logo-mobile-negative.svg" alt="Логотип.">
+                <button class="header__menu--close-button">
+                  <img src="img/sprite/x.svg" alt="Закрыть меню.">
+                </button>
+              </div>
+              <li class="header__item--mobile">
+                <a href="#advantages">Преимущества</a>
+              </li>
+              <li class="header__item--mobile">
+                <a href="#">Направления</a>
+              </li>
+              <li class="header__item--mobile">
+                <a href="#cruises__title">Ближайшие круизы</a>
+              </li>
+              <li class="header__item--mobile">
+                <a href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </header>
       <main class="main">
         <section class="main-page">
-          <h1 class="main-page__title">Круизы в Антарктику</h1>
+          <h1 class="main-page__title">Круизы <br class="br">в Антарктику</h1>
           <p class="main-page__text">Волшебный мир айсбергов и пингвинов</p>
         </section>
         <section class="travel">
           <div class="travel__info">
             <h2 class="travel__title">Путешествие на край Земли</h2>
-            <p class="travel__text">Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
+            <p class="travel__text">Это волшебное путешествие поможет вам познакомиться поближе<br class="br-tablet"> с удивительным миром Антарктики. Наш круизный лайнер отвезет вас<br class="br-tablet"> на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
           </div>
           <picture class="travel__image">
             <source media="(max-width: 767px)" srcset="img/images/travel-mobile.jpg">
@@ -66,7 +88,7 @@
                   <img src="./img/svg/cruise.svg" alt="Небольшой круизный лайнер.">
                 </picture>
                 <h3 class="point__title">Небольшой круизный лайнер</h3>
-                <p class="point__text">Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность насладиться видами и природой.</p>
+                <p class="point__text">Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей<br class="br-tablet"> и даст возможность насладиться видами<br class="br-tablet"> и природой.</p>
               </section>
             </li>
             <li class="advantages__item">
@@ -75,8 +97,8 @@
                   <source media="(max-width: 1024px)" srcset="./img/svg/check-mark-tablet.svg">
                   <img class="point__image" src="./img/svg/check-mark.svg" alt="Система все включено.">
                 </picture>
-                <h3 class="point__title">Система все включено</h3>
-                <p class="point__text">Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.</p>
+                <h3 class="point__title">Система <br class="br"><br class="br-tablet">все включено</h3>
+                <p class="point__text">Все наши круизы работают по системе “Все Включено”. Великолепные блюда <br class="br">и безлимитный бар доступны для вас<br class="br-tablet"> 24 часа.</p>
               </section>
             </li>
             <li class="advantages__item">
@@ -85,7 +107,7 @@
                   <source media="(max-width: 1024px)" srcset="./img/svg/zodiac-tablet.svg">
                   <img src="./img/svg/zodiac.svg" alt="Экскурсионные туры на Zodiac.">
                 </picture>
-                <h3 class="point__title">Экскурсионные туры на Zodiac</h3>
+                <h3 class="point__title point__title--zodiac">Экскурсионные туры на Zodiac</h3>
                 <p class="point__text">Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac c опытными экскурсоводами.</p>
               </section>
             </li>
@@ -222,10 +244,10 @@
           <div class="booking__wrapper">
             <section class="booking__section">
               <h2 class="booking__title">Раннее бронирование</h2>
-              <p class="booking__text">Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
+              <p class="booking__text">Забронируйте тур <br class="br">за 3-6 месяцев <br class="br-tablet">до даты выезда<br class="br"> и сэкономьте до 50%</p>
             </section>
             <form class="booking__form form" action="">
-              <p class="form__title">Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+              <p class="form__title">Оставьте заявку<br class="br"> и мы свяжемся с вами <br class="br">в ближайшее время</p>
               <input class="form__input" type="text" placeholder="Имя">
               <input class="form__input form__input--telephone" type="telephone" placeholder="Телефон">
               <input class="form__input" type="email" placeholder="Email">
@@ -245,9 +267,9 @@
           </div>
           <section class="contacts__info">
             <h2 class="contacts__title">У вас ещё остались вопросы или сомнения?
-              Приезжайте к нам в офис и мы вам все расскажем.</h2>
-            <p class="contacts__address">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</p>
-            <p class="contacts__telephone">8-800-200-00-00</p>
+              Приезжайте<br class="br"> к нам <br class="br-tablet">в офис и мы вам все расскажем.</h2>
+            <a class="contacts__address">г. Санкт Петербург,<br class="br"><br class="br-tablet"> ул. Большая Конюшенная, 19/8</a>
+            <a class="contacts__telephone">8-800-200-00-00</a>
           </section>
         </div>
       </main>
@@ -279,17 +301,17 @@
           <div class="footer__socials socials">
             <ul class="socials__list">
               <li class="socials__item">
-                <a href="">
+                <a href="#">
                   <img class="socials__image" src="img/svg/ok.svg" alt="Одноклассники.">
                 </a>
               </li>
               <li class="socials__item">
-                <a href="">
-                  <img class="socials__image" src="img/svg/star.svg" alt="Звезда.">
+                <a href="#">
+                  <img class="socials__image" src="img/svg/star.svg" alt="Яндекс Дзен.">
                 </a>
               </li>
               <li class="socials__item">
-                <a href="">
+                <a href="#">
                   <img class="socials__image" src="img/svg/reddit.svg" alt="Reddit.">
                 </a>
               </li>
@@ -298,6 +320,8 @@
         </div>
       </footer>
     </div>
+
+
 
     <!-- Модалки -->
     <div class="modal modal--preload" data-modal="feedback">

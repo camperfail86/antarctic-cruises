@@ -46,13 +46,22 @@
 
   .advantages__item {
     background-color: $color-white;
-    padding: 25px 20px;
+    padding: 25px 20px 22px 20px;
+  }
+
+  .advantages {
+    padding-top: 90px;
+    padding-bottom: 100px;
   }
 
   .advantages__title {
+    font-family: 'Montserrat';
+    font-style: normal;
     font-weight: 600;
     font-size: 26px;
     line-height: 150%;
+    width: 211px;
+    margin-bottom: 49px;
   }
 }
 
@@ -60,6 +69,8 @@
   .advantages__title {
     font-size: 24px;
     line-height: 150%;
+    width: 196px;
+    margin-bottom: 30px;
   }
 
   .advantages__list {
@@ -69,6 +80,15 @@
     width: auto;
     margin-right: 15px;
     margin-left: 15px;
+  }
+
+  .advantages {
+    padding-top: 58px;
+    padding-bottom: 67px;
+  }
+
+  .advantages__item {
+    padding-bottom: 21px;
   }
 }
 

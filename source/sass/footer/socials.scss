@@ -4,6 +4,12 @@
   margin: 0;
 }
 
+.socials__image {
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
 .socials {
   display: flex;
   align-self: center;
@@ -35,12 +41,27 @@
   }
 }
 
+@media (max-width: 1023px) and (min-width: 767px) {
+  .socials__item:last-child {
+    margin-right: 0;
+  }
+}
+
 @media (max-width: 767px) {
   .socials {
     margin-top: 30px;
   }
 
+  .socials__list {
+    margin-top: -3px;
+    margin-left: -3px;
+  }
+
   .socials__item a {
     height: 20px;
+  }
+
+  .socials__item {
+    margin-right: 20px;
   }
 }

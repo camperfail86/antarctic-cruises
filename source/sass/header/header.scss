@@ -27,7 +27,13 @@
 }
 
 .header__item {
-  margin-right: 33px;
+  &:not(:last-of-type) {
+    margin-right: 33px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .header__menu {
@@ -62,8 +68,8 @@
     height: 20px;
   }
 
-  .header__item {
-    margin-right: 23px;
+  .header__item:not(:last-of-type) {
+    margin-right: 26px;
   }
 
   .header__menu {
@@ -91,16 +97,64 @@
     position: relative;
     padding: 0;
     border: none;
+    cursor: pointer;
 
     & span {
       &::after {
         left: -24px;
-        top: 6px;
+        top: 4px;
         position: absolute;
         content: url("../../img/sprite/menu.svg");
         width: 24px;
         height: 12px;
       }
     }
+  }
+
+  .header__navigation--mobile {
+    background-color: $color-white;
+    height: 100vh;
+    position: fixed;
+    margin-left: 35px;
+    width: auto;
+    z-index: 20;
+    right: 0;
+    top: 0;
+    padding: 20px 15px 0;
+  }
+
+  .header__item--mobile a {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-black;
+  }
+
+  .header__list--mobile img {
+    margin-bottom: 43px;
+  }
+
+  .header__item--mobile {
+    margin-bottom: 24px;
+  }
+
+  .header__list--mobile {
+    padding: 0;
+    margin: 0;
+  }
+
+  .header__list--images {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__menu--close-button {
+    border: none;
+    background-color: transparent;
+    height: 13px;
+    margin-top: 3px;
+    cursor: pointer;
   }
 }

@@ -82,6 +82,10 @@
   line-height: 13px;
   padding-left: 23px;
   color: $color-white;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .form__button {
@@ -99,18 +103,51 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .form {
+    padding-top: 45px;
+  }
+
+  .form__button {
+    margin-top: 30px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  .form__title {
+    margin-bottom: 26px;
+  }
 }
 
 @media (max-width: 767px) {
+  .form {
+    padding-top: 34px;
+  }
+
   .form__title {
     width: auto;
     text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 28px;
   }
 
   .form__text {
     font-weight: 400;
     font-size: 10px;
     line-height: 120%;
+    margin-top: 19px;
+    padding-left: 28px;
+    width: 184px;
   }
 
   .form__input-span {
@@ -119,7 +156,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 26px;
+      top: 20px;
       left: 0;
       background-color: $color-white;
       width: 20px;
@@ -136,6 +173,12 @@
       left: 4px;
       top: 23px;
     }
+  }
+
+  .form__button {
+    margin-top: 27px;
+    padding-top: 11px;
+    padding-bottom: 11px;
   }
 }
 

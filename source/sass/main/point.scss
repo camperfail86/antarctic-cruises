@@ -21,7 +21,41 @@
 
 @media (max-width: 1023px) {
   .point__title {
-    margin-bottom: 20px;
-    margin-top: 24px;
+    margin-bottom: 7px;
+    margin-top: 19px;
+    width: 171px;
+  }
+
+  .point__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .point__title--zodiac {
+    margin-bottom: 17px;
+  }
+
+  .point__text {
+    width: 168px;
+  }
+}
+
+@media (max-width: 767px) {
+  .point__title {
+    margin-top: 19px;
+    width: 200px;
+    margin-bottom: 6px;
+  }
+
+  .point__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    width: 247px;
   }
 }

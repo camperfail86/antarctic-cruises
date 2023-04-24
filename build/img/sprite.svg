@@ -16,4 +16,6 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z" fill="#F9FBFD"/>
 </g></symbol><symbol id="menu" viewBox="0 0 24 14"><g fill="none">
 <path d="M0 1H24M0 7H24M0 13H24" stroke="#F9FBFD" stroke-width="2"/>
+</g></symbol><symbol id="x" viewBox="0 0 15 15"><g fill="none">
+<path d="M1 1L7.5 7.5M14 14L7.5 7.5M7.5 7.5L14 1L1 14" stroke="#011C40" stroke-width="2"/>
 </g></symbol></svg>
