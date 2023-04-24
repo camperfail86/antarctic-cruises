@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import IMask from 'imask';
 
 // ---------------------------------
 
@@ -23,6 +24,20 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
   });
 });
+
+const element = document.querySelector('.form__input--telephone');
+let maskOptions = {
+  mask: '+{7}(000)000-00-00',
+};
+const mask = new IMask(element, maskOptions);
+
+
+// const mapOptions = {
+//   center: [17.385044, 78.486671],
+//   zoom: 10,
+// };
+
+// const map = new L.map('contacts__map', mapOptions);
 
 // ---------------------------------
 

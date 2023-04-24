@@ -14,6 +14,10 @@
   margin: 0;
 }
 
+.header__item a {
+  color: $color-white;
+}
+
 .header__container {
   display: flex;
   min-height: 38px;

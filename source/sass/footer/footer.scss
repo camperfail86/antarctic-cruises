@@ -26,6 +26,10 @@
   align-items: center;
 }
 
+.footer__item a {
+  color: $color-white;
+}
+
 .footer__navigation {
   display: flex;
 }

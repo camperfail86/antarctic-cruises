@@ -423,6 +423,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -1334,6 +1335,10 @@ button,
   align-items: center;
 }
 
+.footer__item a {
+  color: #f9fbfd;
+}
+
 .footer__navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1364,6 +1369,10 @@ button,
   font-size: 16px;
   line-height: 20px;
   margin: 0;
+}
+
+.header__item a {
+  color: #f9fbfd;
 }
 
 .header__container {
@@ -1482,6 +1491,439 @@ button,
   margin-left: 88px;
 }
 
+.advantages {
+  font-family: "Montserrat", sans-serif;
+  color: #011c40;
+  padding-top: 120px;
+  padding-bottom: 170px;
+  background-image: url("../../img/images/advantages.png");
+  background-size: cover;
+}
+
+.advantages__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  margin: 0 auto 60px auto;
+  width: 228px;
+}
+
+.advantages__list {
+  display: -ms-grid;
+  display: grid;
+  gap: 40px;
+  padding: 0;
+  margin: 0 auto;
+  width: 1160px;
+  -ms-grid-columns: 360px 360px 360px;
+  grid-template-columns: 360px 360px 360px;
+}
+
+.advantages__item {
+  background-color: #f9fbfd;
+  padding: 30px 34px 50px 30px;
+}
+
+.point {
+  font-family: "Montserrat", sans-serif;
+  color: #011c40;
+}
+
+.point__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+
+.point__text {
+  margin: 0;
+}
+
+.booking {
+  background-image: url("../../img/images/background-booking.jpeg");
+  background-size: cover;
+}
+
+.booking__wrapper {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 0;
+  width: 1040px;
+}
+
+.booking__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  margin-bottom: 30px;
+  margin-top: 178px;
+  width: 494px;
+  color: #011c40;
+}
+
+.booking__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0;
+  width: 352px;
+  color: #011c40;
+}
+
+.form {
+  background-color: #011c40;
+  padding: 50px;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 144px;
+  min-height: 455px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.form__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #f9fbfd;
+  margin-bottom: 35px;
+  margin-top: 0;
+  width: 303px;
+}
+
+.form__input {
+  background-color: #f9fbfd;
+  border: none;
+  min-height: 43px;
+  color: rgba(1, 28, 64, 0.7);
+  padding-left: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.form__input::-moz-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.form__input:-ms-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.form__input::-ms-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.form__input::placeholder {
+  color: rgba(1, 28, 64, 0.7);
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.form__input:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.form__checkbox {
+  position: relative;
+  cursor: pointer;
+}
+
+.form__input-span {
+  position: relative;
+}
+
+.form__input-span::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background-color: #f9fbfd;
+  width: 18px;
+  height: 18px;
+  z-index: 1;
+}
+
+.form__input-checkbox:checked + span::after {
+  z-index: 10;
+  content: url("../../img/svg/checkbox.svg");
+  position: absolute;
+  left: 2px;
+  top: 16px;
+}
+
+.form__text {
+  margin: 0;
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  padding-left: 23px;
+  color: #f9fbfd;
+}
+
+.form__button {
+  background-color: #f9fbfd;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 35px;
+  color: #011c40;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.cruises {
+  background-color: #f9fbfd;
+  padding: 95px 0 120px 0;
+  color: #f9fbfd;
+  font-family: "Montserrat", sans-serif;
+}
+
+.cruises__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  color: #011c40;
+  margin: 0 auto 60px auto;
+  width: 302px;
+}
+
+.cruises__item {
+  background-color: #011c40;
+  padding: 35px 25px 0 25px;
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.cruises__list {
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  gap: 30px;
+  -ms-grid-columns: 260px 260px 260px 260px;
+  grid-template-columns: 260px 260px 260px 260px;
+  margin: 0 auto;
+  width: 1130px;
+}
+
+.cruises__section {
+  display: none;
+}
+
+.cruises__item--astoria {
+  background-image: url("../../img/cruises/astoria.jpg");
+}
+
+.cruises__item--elain {
+  background-image: url("../../img/cruises/minion-1.jpg");
+}
+
+.cruises__item--atlantis {
+  background-image: url("../../img/cruises/atlantis.jpg");
+}
+
+.cruises__item--odyssey {
+  background-image: url("../../img/cruises/odissey.jpg");
+}
+
+.cruises__item--olimpia {
+  background-image: url("../../img/cruises/olimpia.jpg");
+}
+
+.cruises__item--avrora {
+  background-image: url("../../img/cruises/avrora.jpg");
+}
+
+.cruises__item--leonor {
+  background-image: url("../../img/cruises/leonor.jpg");
+}
+
+.cruises__item--minion-1 {
+  background-image: url("../../img/cruises/minion-1.jpg");
+}
+
+.cruises__mini-title--second {
+  display: none;
+}
+
+.cruises__item:hover {
+  background-image: none;
+}
+
+.cruises__item:hover section {
+  display: block;
+}
+
+.cruises__item:hover .cruises__mini-title--second {
+  display: block;
+}
+
+.cruises__item:hover .cruises__mini-title--first {
+  display: none;
+}
+
+.cruises__mini-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0;
+}
+
+.cruises__mini-title--first {
+  margin-top: 295px;
+  margin-bottom: 15px;
+}
+
+.cruises__mini-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  margin: 10px 0 0 0;
+}
+
+.cruises__mini-info {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.cruises__button {
+  background-color: #f9fbfd;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+  color: #011c40;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.contacts {
+  color: #011c40;
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.contacts__title {
+  width: 500px;
+  margin: 0 0 45px 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #011c40;
+}
+
+.contacts__address {
+  margin: 0 0 33px 0;
+  padding-left: 28px;
+  position: relative;
+}
+
+.contacts__address::before {
+  position: absolute;
+  width: 18px;
+  height: 22px;
+  top: 0;
+  left: 0;
+  content: url("../../img/svg/mark.svg");
+}
+
+.contacts__telephone {
+  margin: 0;
+  padding-left: 28px;
+  position: relative;
+}
+
+.contacts__telephone::before {
+  position: absolute;
+  width: 18px;
+  height: 22px;
+  top: 0;
+  left: 0;
+  content: url("../../img/svg/telephone.svg");
+}
+
+.contacts__map iframe {
+  margin-right: 100px;
+  width: 560px;
+  height: 306px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1526,6 +1968,31 @@ button,
 @media (max-width: 1439px) {
   .container {
     padding: 0 32px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contacts {
+    width: 960px;
+  }
+
+  .contacts__map iframe {
+    margin-right: 110px;
+    width: 360px;
+  }
+
+  .contacts__info {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .booking__form {
+    margin-left: 70px;
+  }
+
+  .booking__wrapper {
+    width: 970px;
   }
 }
 
@@ -1638,6 +2105,95 @@ button,
     padding: 100px 0;
     margin: 0 auto;
     width: 678px;
+  }
+
+  .advantages__list {
+    gap: 30px;
+    -ms-grid-columns: 206px 206px 206px;
+    grid-template-columns: 206px 206px 206px;
+    width: 678px;
+  }
+
+  .advantages__item {
+    background-color: #f9fbfd;
+    padding: 25px 20px;
+  }
+
+  .advantages__title {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 150%;
+  }
+
+  .point__title {
+    margin-bottom: 20px;
+    margin-top: 24px;
+  }
+
+  .booking__text {
+    text-align: center;
+    margin: 0 auto 60px auto;
+  }
+
+  .booking__title {
+    margin: 0 auto;
+    width: 441px;
+    margin-bottom: 20px;
+  }
+
+  .booking__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: auto;
+    max-width: 420px;
+  }
+
+  .booking__form {
+    margin: 0 auto;
+    width: 403px;
+  }
+
+  .cruises__list {
+    padding: 0;
+    display: -ms-grid;
+    display: grid;
+    gap: 30px;
+    -ms-grid-columns: 309px 309px;
+    grid-template-columns: 309px 309px;
+    margin: 0 auto;
+    width: 648px;
+  }
+
+  .cruises__title {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 150%;
+    width: 281px;
+  }
+
+  .contacts__map iframe {
+    margin-right: 30px;
+    width: 324px;
+    height: 335px;
+  }
+
+  .contacts__info {
+    max-width: 324px;
+  }
+
+  .contacts {
+    width: 678px;
+  }
+
+  .contacts__title {
+    width: auto;
   }
 }
 
@@ -1797,6 +2353,103 @@ button,
     width: 290px;
     height: 155px;
   }
+
+  .advantages__title {
+    font-size: 24px;
+    line-height: 150%;
+  }
+
+  .advantages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 707px;
+    width: auto;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .booking__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    width: 194px;
+    text-align: center;
+  }
+
+  .booking__text {
+    width: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .booking__form {
+    width: 290px;
+    padding: 40px 30px;
+  }
+
+  .form__title {
+    width: auto;
+    text-align: center;
+  }
+
+  .form__text {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 120%;
+  }
+
+  .form__input-span {
+    position: relative;
+  }
+
+  .form__input-span::before {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: 0;
+    background-color: #f9fbfd;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+  }
+
+  .form__input-checkbox:checked + span::after {
+    z-index: 10;
+    content: url("../../img/svg/checkbox.svg");
+    position: absolute;
+    left: 4px;
+    top: 23px;
+  }
+
+  .cruises__list {
+    padding: 0;
+    display: -ms-grid;
+    display: grid;
+    gap: 30px;
+    -ms-grid-columns: 270px;
+    grid-template-columns: 270px;
+    margin: 0 auto;
+    width: 270px;
+  }
+
+  .cruises__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    width: 259px;
+  }
+
+  .cruises__item {
+    min-height: 386px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1875,6 +2528,29 @@ button,
 
   .travel {
     width: 960px;
+  }
+
+  .advantages__list {
+    gap: 30px;
+    -ms-grid-columns: 300px 300px 300px;
+    grid-template-columns: 300px 300px 300px;
+    width: 960px;
+  }
+}
+
+@media (max-width: 1160px) and (min-width: 1024px) {
+  .cruises__list {
+    padding: 0;
+    display: -ms-grid;
+    display: grid;
+    gap: 30px;
+    -ms-grid-columns: 23% 23% 23% 23%;
+    grid-template-columns: 23% 23% 23% 23%;
+    margin: 0 auto;
+    width: auto;
+    max-width: 1160px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
