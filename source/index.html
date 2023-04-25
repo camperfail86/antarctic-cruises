@@ -54,12 +54,12 @@
           </nav>
           <nav class="header__navigation--mobile disp">
             <ul class="header__list--mobile">
-              <div class="header__list--images">
+              <li class="header__list--images">
                 <img src="img/sprite/logo-mobile-negative.svg" alt="Логотип.">
                 <button class="header__menu--close-button">
                   <img src="img/sprite/x.svg" alt="Закрыть меню.">
                 </button>
-              </div>
+              </li>
               <li class="header__item--mobile">
                 <a href="#advantages">Преимущества</a>
               </li>
@@ -78,21 +78,18 @@
       </header>
       <main class="main">
         <section class="main-page">
-          <h1 class="main-page__title">Круизы <br class="br">в Антарктику</h1>
+          <h1 class="main-page__title">Круизы <br class="break-line">в Антарктику</h1>
           <p class="main-page__text">Волшебный мир айсбергов и пингвинов</p>
         </section>
         <section class="travel">
           <div class="travel__info">
             <h2 class="travel__title">Путешествие на край Земли</h2>
-            <p class="travel__text">Это волшебное путешествие поможет вам познакомиться поближе<br class="br-tablet"> с удивительным миром Антарктики. Наш круизный лайнер отвезет вас<br class="br-tablet"> на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
+            <p class="travel__text">Это волшебное путешествие поможет вам познакомиться поближе<br class="break-line-tablet"> с удивительным миром Антарктики. Наш круизный лайнер отвезет вас<br class="break-line-tablet"> на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
           </div>
           <picture class="travel__image">
-            <source media="(max-width: 767px) and (min-resolution: 2ddpx)" srcset="img/images/travel-mobile@2x.jpg">
-            <source media="(max-width: 1023px) and (min-resolution: 2ddpx)" srcset="img/images/travel-tablet@2x.jpg">
-            <source media="(min-resolution: 2ddpx)" srcset="img/images/travel@2x.jpg">
-            <source media="(max-width: 767px)" srcset="img/images/travel-mobile.jpg">
-            <source media="(max-width: 1023px)" srcset="img/images/travel-tablet.jpg">
-            <img src="img/images/travel.jpg" alt="Пингвины.">
+            <source media="(max-width: 767px)" srcset="img/images/travel-mobile.jpg, img/images/travel-mobile@2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="img/images/travel-tablet.jpg, img/images/travel-tablet@2x.jpg 2x">
+            <img src="img/images/travel.jpg" srcset="img/images/travel@2x.jpg 2x" alt="Пингвины.">
           </picture>
         </section>
         <section class="advantages" id="advantages">
@@ -105,7 +102,7 @@
                   <img src="./img/svg/cruise.svg" alt="Небольшой круизный лайнер.">
                 </picture>
                 <h3 class="point__title">Небольшой круизный лайнер</h3>
-                <p class="point__text">Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей<br class="br-tablet"> и даст возможность насладиться видами<br class="br-tablet"> и природой.</p>
+                <p class="point__text">Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей<br class="break-line-tablet"> и даст возможность насладиться видами<br class="break-line-tablet"> и природой.</p>
               </section>
             </li>
             <li class="advantages__item">
@@ -114,8 +111,8 @@
                   <source media="(max-width: 1024px)" srcset="./img/svg/check-mark-tablet.svg">
                   <img class="point__image" src="./img/svg/check-mark.svg" alt="Система все включено.">
                 </picture>
-                <h3 class="point__title">Система <br class="br"><br class="br-tablet">все включено</h3>
-                <p class="point__text">Все наши круизы работают по <br class="br-desk">системе “Все Включено”. Великолепные блюда <br class="br">и безлимитный бар доступны для вас<br class="br-tablet"> 24 часа.</p>
+                <h3 class="point__title">Система <br class="break-line"><br class="break-line-tablet">все включено</h3>
+                <p class="point__text">Все наши круизы работают по <br class="break-line-desk">системе “Все Включено”. Великолепные блюда <br class="break-line">и безлимитный бар доступны для вас<br class="break-line-tablet"> 24 часа.</p>
               </section>
             </li>
             <li class="advantages__item">
@@ -146,7 +143,7 @@
                 <span class="cruises__mini-info">11 дней</span>
                 <p class="cruises__mini-text">Цена</p>
                 <span class="cruises__mini-info">от 11500 $</span>
-                <a class="cruises__button" href="#">Забронировать</a>
+                <a class="cruises__button" href="#booking">Забронировать</a>
               </section>
             </li>
             <li class="cruises__item cruises__item--elain">
@@ -161,7 +158,7 @@
                 <span class="cruises__mini-info">20 дней</span>
                 <p class="cruises__mini-text">Цена</p>
                 <span class="cruises__mini-info">от 14500 $</span>
-                <a class="cruises__button" href="#">Забронировать</a>
+                <a class="cruises__button" href="#booking">Забронировать</a>
               </section>
             </li>
             <li class="cruises__item cruises__item--atlantis">
@@ -176,7 +173,7 @@
                 <span class="cruises__mini-info">15 дней</span>
                 <p class="cruises__mini-text">Цена</p>
                 <span class="cruises__mini-info">от 14500 $</span>
-                <a class="cruises__button" href="#">Забронировать</a>
+                <a class="cruises__button" href="#booking">Забронировать</a>
               </section>
             </li>
             <li class="cruises__item cruises__item--odyssey">
@@ -191,8 +188,8 @@
                 <span class="cruises__mini-info">13 дней</span>
                 <p class="cruises__mini-text">Цена</p>
                 <span class="cruises__mini-info">от 9700 $</span>
-                <a class="cruises__button" href="#">Забронировать</a>
-              <section>
+                <a class="cruises__button" href="#booking">Забронировать</a>
+              </section>
             </li>
             <li class="cruises__item cruises__item--olimpia">
               <h3 class="cruises__mini-title cruises__mini-title--first">Круиз "Олимпия"</h3>
@@ -206,7 +203,7 @@
                 <span class="cruises__mini-info">21 день</span>
                 <p class="cruises__mini-text">Цена</p>
                 <span class="cruises__mini-info">от 18600 $</span>
-                <a class="cruises__button" href="#">Забронировать</a>
+                <a class="cruises__button" href="#booking">Забронировать</a>
               </section>
             </li>
             <li class="cruises__item cruises__item--avrora">
@@ -221,8 +218,8 @@
                 <span class="cruises__mini-info">14 дней</span>
                 <p class="cruises__mini-text">Цена</p>
                 <span class="cruises__mini-info">от 11700 $</span>
-                <a class="cruises__button" href="#">Забронировать</a>
-              <section>
+                <a class="cruises__button" href="#booking">Забронировать</a>
+              </section>
             </li>
             <li class="cruises__item cruises__item--leonor">
               <h3 class="cruises__mini-title cruises__mini-title--first">Круиз “Леонор”</h3>
@@ -236,7 +233,7 @@
                 <span class="cruises__mini-info">17 дней</span>
                 <p class="cruises__mini-text">Цена</p>
                 <span class="cruises__mini-info">от 12500 $</span>
-                <a class="cruises__button" href="#">Забронировать</a>
+                <a class="cruises__button" href="#booking">Забронировать</a>
               </section>
             </li>
             <li class="cruises__item cruises__item--minion-1">
@@ -251,41 +248,43 @@
                 <span class="cruises__mini-info">11 дней</span>
                 <p class="cruises__mini-text">Цена</p>
                 <span class="cruises__mini-info">от 12300 $</span>
-                <a class="cruises__button" href="#">Забронировать</a>
+                <a class="cruises__button" href="#booking">Забронировать</a>
               </section>
             </li>
           </ul>
         </section>
 
-        <div class="booking">
+        <div class="booking" id="booking">
           <div class="booking__wrapper">
             <section class="booking__section">
               <h2 class="booking__title">Раннее бронирование</h2>
-              <p class="booking__text">Забронируйте тур <br class="br">за 3-6 месяцев <br class="br-tablet"><br class="br-desk">до даты выезда<br class="br"> и сэкономьте до 50%</p>
+              <p class="booking__text">Забронируйте тур <br class="break-line">за 3-6 месяцев <br class="break-line-tablet"><br class="break-line-desk">до даты выезда<br class="break-line"> и сэкономьте до 50%</p>
             </section>
-            <form class="booking__form form" action="">
-              <p class="form__title">Оставьте заявку<br class="br"> и мы свяжемся с вами <br class="br">в ближайшее время</p>
-              <input class="form__input" type="text" placeholder="Имя" required>
-              <input class="form__input form__input--telephone" type="telephone" placeholder="Телефон" required>
-              <input class="form__input" type="email" placeholder="Email" required>
-              <label class="form__checkbox">
-                <input class="form__input-checkbox visually-hidden" type="checkbox">
-                <span class="form__input-span"></span>
-                <p class="form__text">Я согласен на обработку моих персональных данных</p>
-              </label>
-                <a class="form__button" href="#">Оставить заявку</a>
+            <form action="https://echo.htmlacademy.ru/">
+              <div class="booking__form form">
+                <p class="form__title">Оставьте заявку<br class="break-line"> и мы свяжемся с вами <br class="break-line">в ближайшее время</p>
+                <input class="form__input" type="text" placeholder="Имя" required>
+                <input class="form__input form__input--telephone" type="tel" placeholder="Телефон" required>
+                <input class="form__input" type="email" placeholder="Email" required>
+                <label class="form__checkbox form__text">
+                  <input class="form__input-checkbox visually-hidden" type="checkbox">
+                  <span class="form__input-span"></span>
+                  Я согласен на обработку моих персональных данных
+                </label>
+                  <a class="form__button" href="#">Оставить заявку</a>
+              </div>
             </form>
           </div>
         </div>
 
         <div class="contacts" id="contacts">
           <div class="contacts__map">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A443c60884b965aabdddd6e6527c60c5ff4090a6c29c17f6fb14cf67b0918037d&amp;source=constructor" frameborder="0"></iframe>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A443c60884b965aabdddd6e6527c60c5ff4090a6c29c17f6fb14cf67b0918037d&amp;source=constructor"></iframe>
           </div>
           <section class="contacts__info">
             <h2 class="contacts__title">У вас ещё остались вопросы или сомнения?
-              Приезжайте<br class="br"> к нам <br class="br-tablet">в офис и мы вам все расскажем.</h2>
-            <a class="contacts__address">г. Санкт Петербург,<br class="br"><br class="br-tablet"> ул. Большая Конюшенная, 19/8</a>
+              Приезжайте<br class="break-line"> к нам <br class="break-line-tablet">в офис и мы вам все расскажем.</h2>
+            <a class="contacts__address">г. Санкт Петербург,<br class="break-line"><br class="break-line-tablet"> ул. Большая Конюшенная, 19/8</a>
             <a class="contacts__telephone" href="tel:+88002000000">8-800-200-00-00</a>
           </section>
         </div>
@@ -321,7 +320,7 @@
                 <a href="#">
                   <svg class="socials__image" width="12" height="20">
                     <use xlink:href="#ok"></use>
-                  </svg>>
+                  </svg>
                 </a>
               </li>
               <li class="socials__item">
@@ -373,7 +372,6 @@
       </div>
     </div>
 
-    <script src="https://unpkg.com/imask"></script>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

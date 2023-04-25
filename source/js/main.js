@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import IMask from 'imask';
+// import IMask from 'imask';
 
 // ---------------------------------
 
@@ -25,11 +25,11 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-const element = document.querySelector('.form__input--telephone');
-let maskOptions = {
-  mask: '+{7}(000)000-00-00',
-};
-const mask = new IMask(element, maskOptions);
+// const element = document.querySelector('.form__input--telephone');
+// let maskOptions = {
+//   mask: '+{7}(000)000-00-00',
+// };
+// const mask = new IMask(element, maskOptions);
 
 const burger = document.querySelector('.header__menu');
 const menu = document.querySelector('.header__navigation--mobile');
@@ -49,6 +49,7 @@ x.addEventListener('click', () => {
   image.classList.remove('disp');
   burger.classList.remove('disp');
 });
+
 
 // const mapOptions = {
 //   center: [17.385044, 78.486671],

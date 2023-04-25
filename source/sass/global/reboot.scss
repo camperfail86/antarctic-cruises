@@ -132,37 +132,41 @@ button,
   appearance: none;
 }
 
+iframe {
+  border-width: 0;
+}
+
 .disp {
   display: none;
   visibility: hidden;
 }
 
-.br {
+.break-line {
   display: none;
 }
 
-.br-tablet {
+.break-line-tablet {
   display: none;
 }
 
-.br-desk {
+.break-line-desk {
   display: none;
 }
 
 @media (min-width: 1024px) {
-  .br-desk {
+  .break-line-desk {
     display: block;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .br-tablet {
+  .break-line-tablet {
     display: block;
   }
 }
 
 @media (max-width: 767px) {
-  .br {
+  .break-line {
     display: block;
   }
 }

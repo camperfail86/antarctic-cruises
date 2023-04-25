@@ -559,20 +559,24 @@ button,
   appearance: none;
 }
 
+iframe {
+  border-width: 0;
+}
+
 .disp {
   display: none;
   visibility: hidden;
 }
 
-.br {
+.break-line {
   display: none;
 }
 
-.br-tablet {
+.break-line-tablet {
   display: none;
 }
 
-.br-desk {
+.break-line-desk {
   display: none;
 }
 
@@ -1480,7 +1484,7 @@ button,
 .main-page {
   font-family: "Montserrat", sans-serif;
   color: #f9fbfd;
-  background-color: #011c40;
+  background-color: #507dae;
   background-image: url("./../img/images/background.png");
   background-position: center center;
   background-size: cover;
@@ -1614,6 +1618,21 @@ button,
   width: 1040px;
 }
 
+.booking__form {
+  background-color: #011c40;
+  padding: 44px 50px 50px 50px;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 143px;
+  min-height: 455px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .booking__title {
   font-weight: 700;
   font-size: 40px;
@@ -1631,21 +1650,6 @@ button,
   margin: 0;
   width: 352px;
   color: #011c40;
-}
-
-.form {
-  background-color: #011c40;
-  padding: 44px 50px 50px 50px;
-  font-family: "Montserrat", sans-serif;
-  margin-left: 143px;
-  min-height: 455px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .form__title {
@@ -1732,8 +1736,8 @@ button,
 .form__input-span::before {
   content: "";
   position: absolute;
-  top: 20px;
-  left: 0;
+  top: -3px;
+  left: -23px;
   background-color: #f9fbfd;
   width: 18px;
   height: 18px;
@@ -1744,13 +1748,13 @@ button,
   z-index: 10;
   content: url("../../img/svg/checkbox.svg");
   position: absolute;
-  left: 2px;
-  top: 16px;
+  top: 0;
+  left: -20px;
 }
 
 .form__text {
   margin: 0;
-  margin-top: 25px;
+  margin-top: 23px;
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
@@ -1765,7 +1769,7 @@ button,
 .form__button {
   background-color: #f9fbfd;
   font-family: "Montserrat", sans-serif;
-  margin-top: 30px;
+  margin-top: 32px;
   color: #011c40;
   font-weight: 600;
   font-size: 14px;
@@ -2038,7 +2042,7 @@ button,
 */
 
 @media (min-width: 1024px) {
-  .br-desk {
+  .break-line-desk {
     display: block;
   }
 
@@ -2260,6 +2264,12 @@ button,
     line-height: 140%;
   }
 
+  .booking__form {
+    padding-top: 45px;
+    margin: 0 auto;
+    width: 403px;
+  }
+
   .booking__text {
     text-align: center;
     margin: 0 auto 52px auto;
@@ -2286,11 +2296,6 @@ button,
     width: auto;
     max-width: 420px;
     padding-top: 88px;
-  }
-
-  .booking__form {
-    margin: 0 auto;
-    width: 403px;
   }
 
   .cruises__list {
@@ -2353,7 +2358,7 @@ button,
 }
 
 @media (max-width: 767px) {
-  .br {
+  .break-line {
     display: block;
   }
 
@@ -2637,6 +2642,11 @@ button,
     margin-bottom: 13px;
   }
 
+  .booking__form {
+    width: 290px;
+    padding: 34px 30px 40px 30px;
+  }
+
   .booking__text {
     width: auto;
     font-style: normal;
@@ -2646,18 +2656,9 @@ button,
     margin-bottom: 33px;
   }
 
-  .booking__form {
-    width: 290px;
-    padding: 40px 30px;
-  }
-
   .booking__wrapper {
     padding-top: 60px;
     padding-bottom: 65px;
-  }
-
-  .form {
-    padding-top: 34px;
   }
 
   .form__title {
@@ -2687,8 +2688,8 @@ button,
   .form__input-span::before {
     content: "";
     position: absolute;
-    top: 20px;
-    left: 0;
+    top: 2px;
+    left: -28px;
     background-color: #f9fbfd;
     width: 20px;
     height: 20px;
@@ -2699,8 +2700,8 @@ button,
     z-index: 10;
     content: url("../../img/svg/checkbox.svg");
     position: absolute;
-    left: 4px;
-    top: 23px;
+    top: 7px;
+    left: -24px;
   }
 
   .form__button {
@@ -2875,7 +2876,7 @@ button,
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .br-tablet {
+  .break-line-tablet {
     display: block;
   }
 
@@ -2885,10 +2886,6 @@ button,
 
   .point__text {
     width: 168px;
-  }
-
-  .form {
-    padding-top: 45px;
   }
 
   .form__button {
@@ -2944,6 +2941,10 @@ button,
     max-width: 1160px;
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .cruises__button {
+    margin-top: 16px;
   }
 }
 

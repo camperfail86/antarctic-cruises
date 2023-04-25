@@ -12,6 +12,16 @@
   width: 1040px;
 }
 
+.booking__form {
+  background-color: $color-black;
+  padding: 44px 50px 50px 50px;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 143px;
+  min-height: 455px;
+  display: flex;
+  flex-direction: column;
+}
+
 .booking__title {
   font-weight: 700;
   font-size: 40px;
@@ -42,6 +52,12 @@
 }
 
 @media (max-width: 1023px) {
+  .booking__form  {
+    padding-top: 45px;
+    margin: 0 auto;
+    width: 403px;
+  }
+
   .booking__text {
     text-align: center;
     margin: 0 auto 52px auto;
@@ -64,11 +80,6 @@
     max-width: 420px;
     padding-top: 88px;
   }
-
-  .booking__form {
-    margin: 0 auto;
-    width: 403px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -83,6 +94,11 @@
     margin-bottom: 13px;
   }
 
+  .booking__form {
+    width: 290px;
+    padding: 34px 30px 40px 30px;
+  }
+
   .booking__text {
     width: auto;
     font-style: normal;
@@ -90,11 +106,6 @@
     font-size: 16px;
     line-height: 140%;
     margin-bottom: 33px;
-  }
-
-  .booking__form {
-    width: 290px;
-    padding: 40px 30px;
   }
 
   .booking__wrapper {
