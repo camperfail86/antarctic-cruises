@@ -3,7 +3,8 @@
   color: $color-black;
   padding-top: 110px;
   padding-bottom: 118px;
-  background-image: url("../../img/images/advantages.png");
+  background-color: #e3ecf6;
+  background-image: url("./../img/images/advantages.png");
   background-size: cover;
 }
 
@@ -55,7 +56,7 @@
   }
 
   .advantages__title {
-    font-family: 'Montserrat';
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 26px;
@@ -91,4 +92,3 @@
     padding-bottom: 21px;
   }
 }
-

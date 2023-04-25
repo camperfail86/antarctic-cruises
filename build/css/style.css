@@ -387,28 +387,28 @@ template {
 @font-face {
   font-weight: 400;
   font-family: "Montserrat";
-  src: url("../../fonts/Montserrat-Regular.woff2") format("woff2");
+  src: url("./../fonts/Montserrat-Regular.woff2");
 }
 
 @font-face {
   font-style: normal;
   font-weight: 500;
   font-family: "Montserrat";
-  src: url("../../fonts/Montserrat-Medium.ttf") format("ttf");
+  src: url("./../fonts/Montserrat-Medium.ttf") format("ttf");
 }
 
 @font-face {
   font-style: normal;
   font-weight: 600;
   font-family: "Montserrat";
-  src: url("../../fonts/Montserrat-SemiBold.ttf") format("ttf");
+  src: url("./../fonts/Montserrat-SemiBold.ttf") format("ttf");
 }
 
 @font-face {
   font-style: normal;
   font-weight: 700;
   font-family: "Montserrat";
-  src: url("../../fonts/Montserrat-Bold.ttf") format("ttf");
+  src: url("./../fonts/Montserrat-Bold.ttf") format("ttf");
 }
 
 *,
@@ -1340,6 +1340,9 @@ button,
   color: #f9fbfd;
   padding: 0;
   margin: 0;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 700px;
 }
 
 .footer__item {
@@ -1365,10 +1368,19 @@ button,
   line-height: 20px;
 }
 
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .footer__navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .footer__image {
@@ -1442,6 +1454,10 @@ button,
   opacity: 0.8;
 }
 
+.socials__item a {
+  height: 20px;
+}
+
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1464,7 +1480,8 @@ button,
 .main-page {
   font-family: "Montserrat", sans-serif;
   color: #f9fbfd;
-  background-image: url("../../img/images/background.png");
+  background-color: #011c40;
+  background-image: url("./../img/images/background.png");
   background-position: center center;
   background-size: cover;
   min-height: 650px;
@@ -1530,7 +1547,8 @@ button,
   color: #011c40;
   padding-top: 110px;
   padding-bottom: 118px;
-  background-image: url("../../img/images/advantages.png");
+  background-color: #e3ecf6;
+  background-image: url("./../img/images/advantages.png");
   background-size: cover;
 }
 
@@ -1573,7 +1591,7 @@ button,
 
 .point__text {
   margin: 0;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1581,8 +1599,9 @@ button,
 }
 
 .booking {
-  background-image: url("../../img/images/background-booking.jpeg");
+  background-image: url("./../img/images/background-booking.jpeg");
   background-size: cover;
+  background-color: #87cefa;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -1811,35 +1830,35 @@ button,
 }
 
 .cruises__item--astoria {
-  background-image: url("../../img/cruises/astoria.jpg");
+  background-image: url("./../img/cruises/astoria.jpg");
 }
 
 .cruises__item--elain {
-  background-image: url("../../img/cruises/minion-1.jpg");
+  background-image: url("./../img/cruises/minion-1.jpg");
 }
 
 .cruises__item--atlantis {
-  background-image: url("../../img/cruises/atlantis.jpg");
+  background-image: url("./../img/cruises/atlantis.jpg");
 }
 
 .cruises__item--odyssey {
-  background-image: url("../../img/cruises/odissey.jpg");
+  background-image: url("./../img/cruises/odissey.jpg");
 }
 
 .cruises__item--olimpia {
-  background-image: url("../../img/cruises/olimpia.jpg");
+  background-image: url("./../img/cruises/olimpia.jpg");
 }
 
 .cruises__item--avrora {
-  background-image: url("../../img/cruises/avrora.jpg");
+  background-image: url("./../img/cruises/avrora.jpg");
 }
 
 .cruises__item--leonor {
-  background-image: url("../../img/cruises/leonor.jpg");
+  background-image: url("./../img/cruises/leonor.jpg");
 }
 
 .cruises__item--minion-1 {
-  background-image: url("../../img/cruises/minion-1.jpg");
+  background-image: url("./../img/cruises/minion-1.jpg");
 }
 
 .cruises__mini-title--second {
@@ -1953,7 +1972,7 @@ button,
   height: 22px;
   top: 0;
   left: 0;
-  content: url("../../img/svg/mark.svg");
+  content: url("./../img/svg/mark.svg");
 }
 
 .contacts__telephone {
@@ -1968,7 +1987,7 @@ button,
   height: 22px;
   top: 0;
   left: 0;
-  content: url("../../img/svg/telephone.svg");
+  content: url("./../img/svg/telephone.svg");
 }
 
 .contacts__map iframe {
@@ -2108,6 +2127,10 @@ button,
     line-height: 15px;
   }
 
+  .footer__list {
+    width: 500px;
+  }
+
   .header__container {
     width: 678px;
     margin: 30px auto 0 auto;
@@ -2151,7 +2174,7 @@ button,
   }
 
   .main-page {
-    background-image: url("../../img/images/background.png");
+    background-image: url("./../img/images/background.png");
     padding-left: 45px;
     min-height: 638px;
     padding-top: 273px;
@@ -2180,7 +2203,7 @@ button,
     padding: 0;
     margin-bottom: 15px;
     margin-top: -9px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 26px;
@@ -2215,7 +2238,7 @@ button,
   }
 
   .advantages__title {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 26px;
@@ -2325,7 +2348,7 @@ button,
     height: 22px;
     top: 5px;
     left: 0;
-    content: url("../../img/svg/mark.svg");
+    content: url("./../img/svg/mark.svg");
   }
 }
 
@@ -2371,7 +2394,7 @@ button,
     padding-left: 15px;
   }
 
-  .footer__navigation {
+  .footer__nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2507,7 +2530,7 @@ button,
 
   .main-page {
     background-position: center center;
-    background-image: url("../../img/images/background.png");
+    background-image: url("./../img/images/background.png");
     background-size: 767px 500px;
     padding-left: 15px;
     min-height: 500px;
@@ -2604,7 +2627,7 @@ button,
   }
 
   .booking__title {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -2640,7 +2663,7 @@ button,
   .form__title {
     width: auto;
     text-align: center;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -2768,7 +2791,7 @@ button,
     height: 22px;
     top: 0;
     left: 0;
-    content: url("../../img/svg/telephone.svg");
+    content: url("./../img/svg/telephone.svg");
   }
 
   .contacts__address {
@@ -2784,7 +2807,7 @@ button,
     height: 22px;
     top: 5px;
     left: 0;
-    content: url("../../img/svg/mark.svg");
+    content: url("./../img/svg/mark.svg");
   }
 }
 
@@ -2959,5 +2982,47 @@ button,
 
   .custom-select__item:hover:not(.focus-visible) {
     background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
+  .cruises__item--astoria {
+    background-image: url("./../img/cruises/astoria@2x.jpg");
+    background-size: 100% 100%;
+  }
+
+  .cruises__item--elain {
+    background-image: url("./../img/cruises/minion-1@2x.jpg");
+    background-size: 100% 100%;
+  }
+
+  .cruises__item--atlantis {
+    background-image: url("./../img/cruises/atlantis@2x.jpg");
+    background-size: 100% 100%;
+  }
+
+  .cruises__item--odyssey {
+    background-image: url("./../img/cruises/odissey@2x.jpg");
+    background-size: 100% 100%;
+  }
+
+  .cruises__item--olimpia {
+    background-image: url("./../img/cruises/olimpia@2x.jpg");
+    background-size: 100% 100%;
+  }
+
+  .cruises__item--avrora {
+    background-image: url("./../img/cruises/avrora@2x.jpg");
+    background-size: 100% 100%;
+  }
+
+  .cruises__item--leonor {
+    background-image: url("./../img/cruises/leonor@2x.jpg");
+    background-size: 100% 100%;
+  }
+
+  .cruises__item--minion-1 {
+    background-image: url("./../img/cruises/minion-1@2x.jpg");
+    background-size: 100% 100%;
   }
 }

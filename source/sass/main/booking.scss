@@ -1,6 +1,7 @@
 .booking {
-  background-image: url("../../img/images/background-booking.jpeg");
+  background-image: url("./../img/images/background-booking.jpeg");
   background-size: cover;
+  background-color: #87cefa;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -72,7 +73,7 @@
 
 @media (max-width: 767px) {
   .booking__title {
-    font-family: 'Montserrat';
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;

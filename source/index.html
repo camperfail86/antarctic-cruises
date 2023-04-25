@@ -9,10 +9,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" /> -->
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <svg style="display: none;">
+      <symbol id="ok" viewBox="0 0 12 20">
+        <path d="M5.875 3.025c1.196 0 2.168.96 2.168 2.138 0 1.175-.972 2.134-2.168 2.134-1.196 0-2.168-.958-2.168-2.134 0-1.179.972-2.138 2.168-2.138Zm0 7.298c2.888 0 5.237-2.316 5.237-5.16C11.112 2.315 8.763 0 5.875 0S.642 2.315.642 5.163c0 2.844 2.345 5.16 5.233 5.16Zm2.118 4.211a9.95 9.95 0 0 0 3.04-1.243 1.5 1.5 0 0 0 .482-2.084 1.545 1.545 0 0 0-2.118-.476 6.733 6.733 0 0 1-7.048 0 1.54 1.54 0 0 0-2.114.476 1.5 1.5 0 0 0 .483 2.084 9.95 9.95 0 0 0 3.04 1.243L.828 17.418a1.498 1.498 0 0 0 0 2.137 1.547 1.547 0 0 0 2.172 0l2.874-2.833 2.878 2.833a1.543 1.543 0 0 0 2.168 0 1.498 1.498 0 0 0 0-2.137l-2.928-2.884Z" fill="#F9FBFD"/>
+      </symbol>
+
+      <symbol id="dzen" viewBox="0 0 20 20">
+        <path d="M19.559 9.557h.004a.436.436 0 0 0 .435-.476A10.026 10.026 0 0 0 10.921 0a.437.437 0 0 0-.476.44c.076 6.408.921 9.027 9.114 9.116Zm0 .886c-8.193.09-9.038 2.707-9.114 9.115a.437.437 0 0 0 .477.44 10.025 10.025 0 0 0 9.076-9.08.437.437 0 0 0-.44-.475ZM9.049.003A10.03 10.03 0 0 0 .003 9.083a.436.436 0 0 0 .435.476h.005C8.608 9.464 9.451 6.847 9.528.443a.438.438 0 0 0-.478-.44ZM.443 10.444c-.136-.016-.243.049-.326.14a.438.438 0 0 0-.114.335 10.03 10.03 0 0 0 9.089 9.08.437.437 0 0 0 .436-.442c-.077-6.403-.92-9.02-9.085-9.114Z" fill="#F9FBFD"/>
+      </symbol>
+
+      <symbol id="reddit" viewBox="0 0 20 20">
+        <path d="M11.945 0c-.641 0-1.243.325-1.629.795-.386.469-.599 1.04-.754 1.643-.246.97-.322 2.045-.34 3.014-1.803.12-3.435.654-4.79 1.48-.55-.463-1.213-.72-1.848-.713-.724.007-1.41.319-1.921.96C-.313 8.4-.201 10.4.93 11.588a6.01 6.01 0 0 0-.122 1.123C.808 16.74 4.924 20 10 20c5.076 0 9.192-3.264 9.192-7.288 0-.38-.052-.756-.122-1.123 1.13-1.188 1.243-3.188.267-4.41-.51-.641-1.197-.953-1.92-.96-.636-.007-1.298.25-1.849.713-1.35-.822-2.972-1.357-4.766-1.48.025-.894.089-1.822.268-2.52.112-.439.246-.757.389-.932.143-.175.246-.247.486-.247.52 0 .587.168.9.576.158.205.34.462.632.712.292.25.724.466 1.192.466V1.753c-.131 0-.155-.003-.243-.082-.089-.079-.21-.26-.39-.493C13.678.708 12.982 0 11.947 0Zm5.058.164c-1.21 0-2.188 1.103-2.188 2.466 0 1.363.978 2.466 2.188 2.466 1.21 0 2.189-1.103 2.189-2.466 0-1.363-.98-2.466-2.189-2.466Zm0 .877c.778 0 1.41.712 1.41 1.59 0 .876-.632 1.588-1.41 1.588-.778 0-1.41-.712-1.41-1.589s.632-1.589 1.41-1.589ZM10 6.821c4.307 0 7.951 2.703 7.951 5.891 0 3.192-3.644 5.89-7.951 5.89-4.307 0-7.951-2.698-7.951-5.89 0-3.188 3.644-5.89 7.951-5.89Zm-7.392.795c.216.004.44.059.656.165-.78.668-1.4 1.435-1.823 2.301-.292-.678-.213-1.524.146-1.972a1.263 1.263 0 0 1 1.02-.494Zm14.784 0c.398-.003.76.165 1.021.494.36.448.438 1.294.146 1.972-.422-.866-1.042-1.633-1.823-2.301a1.55 1.55 0 0 1 .656-.165ZM6.888 9.808c-.779 0-1.41.713-1.41 1.59 0 .876.631 1.588 1.41 1.588.778 0 1.41-.712 1.41-1.589s-.632-1.589-1.41-1.589Zm6.225 0c-.779 0-1.41.713-1.41 1.59 0 .876.631 1.588 1.41 1.588.778 0 1.41-.712 1.41-1.589s-.632-1.589-1.41-1.589Zm-6.98 5.398C6.63 16.36 8.162 17.48 10 17.48s3.395-1.12 3.89-2.274c-.9.654-2.319 1.095-3.89 1.095-1.571 0-2.967-.441-3.866-1.095Z" fill="#F9FBFD"/>
+      </symbol>
+    </svg>
+
+
     <div class="wrapper">
       <header class="header">
         <div class="header__container">
@@ -73,6 +87,9 @@
             <p class="travel__text">Это волшебное путешествие поможет вам познакомиться поближе<br class="br-tablet"> с удивительным миром Антарктики. Наш круизный лайнер отвезет вас<br class="br-tablet"> на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
           </div>
           <picture class="travel__image">
+            <source media="(max-width: 767px) and (min-resolution: 2ddpx)" srcset="img/images/travel-mobile@2x.jpg">
+            <source media="(max-width: 1023px) and (min-resolution: 2ddpx)" srcset="img/images/travel-tablet@2x.jpg">
+            <source media="(min-resolution: 2ddpx)" srcset="img/images/travel@2x.jpg">
             <source media="(max-width: 767px)" srcset="img/images/travel-mobile.jpg">
             <source media="(max-width: 1023px)" srcset="img/images/travel-tablet.jpg">
             <img src="img/images/travel.jpg" alt="Пингвины.">
@@ -145,7 +162,7 @@
                 <p class="cruises__mini-text">Цена</p>
                 <span class="cruises__mini-info">от 14500 $</span>
                 <a class="cruises__button" href="#">Забронировать</a>
-             </section>
+              </section>
             </li>
             <li class="cruises__item cruises__item--atlantis">
               <h3 class="cruises__mini-title cruises__mini-title--first">Круиз “Атлантис”</h3>
@@ -248,9 +265,9 @@
             </section>
             <form class="booking__form form" action="">
               <p class="form__title">Оставьте заявку<br class="br"> и мы свяжемся с вами <br class="br">в ближайшее время</p>
-              <input class="form__input" type="text" placeholder="Имя">
-              <input class="form__input form__input--telephone" type="telephone" placeholder="Телефон">
-              <input class="form__input" type="email" placeholder="Email">
+              <input class="form__input" type="text" placeholder="Имя" required>
+              <input class="form__input form__input--telephone" type="telephone" placeholder="Телефон" required>
+              <input class="form__input" type="email" placeholder="Email" required>
               <label class="form__checkbox">
                 <input class="form__input-checkbox visually-hidden" type="checkbox">
                 <span class="form__input-span"></span>
@@ -269,13 +286,13 @@
             <h2 class="contacts__title">У вас ещё остались вопросы или сомнения?
               Приезжайте<br class="br"> к нам <br class="br-tablet">в офис и мы вам все расскажем.</h2>
             <a class="contacts__address">г. Санкт Петербург,<br class="br"><br class="br-tablet"> ул. Большая Конюшенная, 19/8</a>
-            <a class="contacts__telephone">8-800-200-00-00</a>
+            <a class="contacts__telephone" href="tel:+88002000000">8-800-200-00-00</a>
           </section>
         </div>
       </main>
       <footer class="footer">
         <div class="footer__container">
-          <div class="footer__navigation">
+          <div class="footer__nav">
             <picture class="footer__image">
               <source media="(max-width: 767px)" srcset="img/sprite/logo-mobile.svg">
               <source media="(max-width: 1023px)" srcset="img/sprite/logo-tablet.svg">
@@ -302,17 +319,23 @@
             <ul class="socials__list">
               <li class="socials__item">
                 <a href="#">
-                  <img class="socials__image" src="img/svg/ok.svg" alt="Одноклассники.">
+                  <svg class="socials__image" width="12" height="20">
+                    <use xlink:href="#ok"></use>
+                  </svg>>
                 </a>
               </li>
               <li class="socials__item">
                 <a href="#">
-                  <img class="socials__image" src="img/svg/star.svg" alt="Яндекс Дзен.">
+                  <svg class="socials__image" width="20" height="20">
+                    <use xlink:href="#dzen"></use>
+                  </svg>
                 </a>
               </li>
               <li class="socials__item">
                 <a href="#">
-                  <img class="socials__image" src="img/svg/reddit.svg" alt="Reddit.">
+                  <svg class="socials__image" width="20" height="20">
+                    <use xlink:href="#reddit"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -320,8 +343,6 @@
         </div>
       </footer>
     </div>
-
-
 
     <!-- Модалки -->
     <div class="modal modal--preload" data-modal="feedback">
@@ -352,7 +373,6 @@
       </div>
     </div>
 
-    <!-- <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script> -->
     <script src="https://unpkg.com/imask"></script>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

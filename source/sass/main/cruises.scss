@@ -20,7 +20,6 @@
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
   position: relative;
-  // min-height: 386px;
 }
 
 .cruises__list {
@@ -36,36 +35,78 @@
   display: none;
 }
 
+@media (min-resolution: 2dppx) {
+  .cruises__item--astoria {
+    background-image: url("./../img/cruises/astoria@2x.jpg");
+    background-size: 100% 100%;
+  }
+
+  .cruises__item--elain {
+    background-image: url("./../img/cruises/minion-1@2x.jpg");
+    background-size: 100% 100%;
+  }
+
+  .cruises__item--atlantis {
+    background-image: url("./../img/cruises/atlantis@2x.jpg");
+    background-size: 100% 100%;
+  }
+
+  .cruises__item--odyssey {
+    background-image: url("./../img/cruises/odissey@2x.jpg");
+    background-size: 100% 100%;
+  }
+
+  .cruises__item--olimpia {
+    background-image: url("./../img/cruises/olimpia@2x.jpg");
+    background-size: 100% 100%;
+  }
+
+  .cruises__item--avrora {
+    background-image: url("./../img/cruises/avrora@2x.jpg");
+    background-size: 100% 100%;
+  }
+
+  .cruises__item--leonor {
+    background-image: url("./../img/cruises/leonor@2x.jpg");
+    background-size: 100% 100%;
+  }
+
+  .cruises__item--minion-1 {
+    background-image: url("./../img/cruises/minion-1@2x.jpg");
+    background-size: 100% 100%;
+  }
+}
+
 .cruises__item--astoria {
-  background-image: url("../../img/cruises/astoria.jpg");
+  background-image: url("./../img/cruises/astoria.jpg");
 }
 
 .cruises__item--elain {
-  background-image: url("../../img/cruises/minion-1.jpg");
+  background-image: url("./../img/cruises/minion-1.jpg");
 }
 
 .cruises__item--atlantis {
-  background-image: url("../../img/cruises/atlantis.jpg");
+  background-image: url("./../img/cruises/atlantis.jpg");
 }
 
 .cruises__item--odyssey {
-  background-image: url("../../img/cruises/odissey.jpg");
+  background-image: url("./../img/cruises/odissey.jpg");
 }
 
 .cruises__item--olimpia {
-  background-image: url("../../img/cruises/olimpia.jpg");
+  background-image: url("./../img/cruises/olimpia.jpg");
 }
 
 .cruises__item--avrora {
-  background-image: url("../../img/cruises/avrora.jpg");
+  background-image: url("./../img/cruises/avrora.jpg");
 }
 
 .cruises__item--leonor {
-  background-image: url("../../img/cruises/leonor.jpg");
+  background-image: url("./../img/cruises/leonor.jpg");
 }
 
 .cruises__item--minion-1 {
-  background-image: url("../../img/cruises/minion-1.jpg");
+  background-image: url("./../img/cruises/minion-1.jpg");
 }
 
 .cruises__mini-title--second {
