@@ -52,7 +52,7 @@
             </ul>
             <button class="header__menu"><span class=""></span></button>
           </nav>
-          <nav class="header__navigation--mobile disp">
+          <!-- <nav class="header__navigation--mobile disp">
             <ul class="header__list--mobile">
               <li class="header__list--images">
                 <img src="img/sprite/logo-mobile-negative.svg" alt="Логотип.">
@@ -73,7 +73,7 @@
                 <a href="#contacts">Контакты</a>
               </li>
             </ul>
-          </nav>
+          </nav> -->
         </div>
       </header>
       <main class="main">
@@ -263,15 +263,15 @@
             <form action="https://echo.htmlacademy.ru/">
               <div class="booking__form form">
                 <p class="form__title">Оставьте заявку<br class="break-line"> и мы свяжемся с вами <br class="break-line">в ближайшее время</p>
-                <input class="form__input" type="text" placeholder="Имя" required>
-                <input class="form__input form__input--telephone" type="tel" placeholder="Телефон" required>
-                <input class="form__input" type="email" placeholder="Email" required>
+                <input class="form__input" type="text" placeholder="Имя" name="name" required>
+                <input class="form__input form__input--telephone" type="tel" placeholder="Телефон" name="telephone" required>
+                <input class="form__input" type="email" placeholder="Email" name="email" required>
                 <label class="form__checkbox form__text">
-                  <input class="form__input-checkbox visually-hidden" type="checkbox">
+                  <input class="form__input-checkbox visually-hidden" type="checkbox" name="agree">
                   <span class="form__input-span"></span>
                   Я согласен на обработку моих персональных данных
                 </label>
-                  <a class="form__button" href="#">Оставить заявку</a>
+                  <button class="form__button">Оставить заявку</button>
               </div>
             </form>
           </div>
@@ -344,21 +344,35 @@
     </div>
 
     <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
+    <!-- <div class="modal modal--preload" data-modal="feedback">
+        <div class="modal__overlay" data-close-modal></div> -->
+        <div class="header__modal">
+          <nav class="header__navigation--mobile disp">
+            <ul class="header__list--mobile">
+              <li class="header__list--images">
+                <img src="img/sprite/logo-mobile-negative.svg" alt="Логотип.">
+                <button class="header__menu--close-button">
+                  <img src="img/sprite/x.svg" alt="Закрыть меню.">
+                </button>
+              </li>
+              <li class="header__item--mobile">
+                <a href="#advantages">Преимущества</a>
+              </li>
+              <li class="header__item--mobile">
+                <a href="#">Направления</a>
+              </li>
+              <li class="header__item--mobile">
+                <a href="#cruises__title">Ближайшие круизы</a>
+              </li>
+              <li class="header__item--mobile">
+                <a href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-      </div>
-    </div>
+    <!-- </div> -->
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <!-- <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
@@ -370,7 +384,7 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

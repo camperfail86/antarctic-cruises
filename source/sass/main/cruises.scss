@@ -181,9 +181,10 @@
 
 @media (max-width: 1160px) and (min-width: 1024px) {
   .cruises__list {
+    justify-content: center;
     padding: 0;
     display: grid;
-    gap: 30px;
+    gap: 25px;
     grid-template-columns: 23% 23% 23% 23%;
     margin: 0 auto;
     width: auto;
