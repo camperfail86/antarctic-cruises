@@ -2449,7 +2449,7 @@ iframe {
     left: -24px;
     top: 4px;
     position: absolute;
-    content: url(".././img/sprite/menu.svg");
+    content: url("./../img/sprite/menu.svg");
     width: 24px;
     height: 12px;
   }
