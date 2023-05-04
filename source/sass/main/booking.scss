@@ -95,7 +95,8 @@
   }
 
   .booking__form {
-    width: 290px;
+    width: auto;
+    max-width: 500px;
     padding: 34px 30px 40px 30px;
   }
 
@@ -111,5 +112,8 @@
   .booking__wrapper {
     padding-top: 60px;
     padding-bottom: 65px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100%;
   }
 }

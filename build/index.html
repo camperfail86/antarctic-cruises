@@ -30,11 +30,13 @@
     <div class="wrapper">
       <header class="header">
         <div class="header__container">
-          <picture class="header__image">
-            <source media="(max-width: 767px)" srcset="img/sprite/logo-mobile.svg">
-            <source media="(max-width: 1023px)" srcset="img/sprite/logo-tablet.svg">
-            <img src="img/sprite/logo.svg" alt="Логотип.">
-          </picture>
+          <a href="index.html">
+            <picture class="header__image">
+              <source media="(max-width: 767px)" srcset="img/sprite/logo-mobile.svg">
+              <source media="(max-width: 1023px)" srcset="img/sprite/logo-tablet.svg">
+              <img src="img/sprite/logo.svg" alt="Логотип.">
+            </picture>
+          </a>
           <nav class="header__navigation">
             <ul class="header__list">
               <li class="header__item">
@@ -52,28 +54,6 @@
             </ul>
             <button class="header__menu"><span class=""></span></button>
           </nav>
-          <!-- <nav class="header__navigation--mobile disp">
-            <ul class="header__list--mobile">
-              <li class="header__list--images">
-                <img src="img/sprite/logo-mobile-negative.svg" alt="Логотип.">
-                <button class="header__menu--close-button">
-                  <img src="img/sprite/x.svg" alt="Закрыть меню.">
-                </button>
-              </li>
-              <li class="header__item--mobile">
-                <a href="#advantages">Преимущества</a>
-              </li>
-              <li class="header__item--mobile">
-                <a href="#">Направления</a>
-              </li>
-              <li class="header__item--mobile">
-                <a href="#cruises__title">Ближайшие круизы</a>
-              </li>
-              <li class="header__item--mobile">
-                <a href="#contacts">Контакты</a>
-              </li>
-            </ul>
-          </nav> -->
         </div>
       </header>
       <main class="main">
@@ -131,124 +111,140 @@
         <section class="cruises">
           <h2 class="cruises__title" id="cruises__title">Ближайшие круизы</h2>
           <ul class="cruises__list">
-            <li class="cruises__item cruises__item--astoria">
+            <li class="cruises__item cruises__item--astoria" tabindex="0">
               <h3 class="cruises__mini-title cruises__mini-title--first">Круиз "Астория"</h3>
               <section class="cruises__section">
                 <h3 class="cruises__mini-title cruises__mini-title--second">Круиз "Астория"</h3>
-                <p class="cruises__mini-text">Маршрут</p>
-                <span class="cruises__mini-info">Аргентина - Фолклендские острова - Антарктида</span>
-                <p class="cruises__mini-text">Порт отправления</p>
-                <span class="cruises__mini-info">Ушуайя</span>
-                <p class="cruises__mini-text">Продолжительность</p>
-                <span class="cruises__mini-info">11 дней</span>
-                <p class="cruises__mini-text">Цена</p>
-                <span class="cruises__mini-info">от 11500 $</span>
-                <a class="cruises__button" href="#booking">Забронировать</a>
+                <div class="cruises__div">
+                  <p class="cruises__mini-text">Маршрут</p>
+                  <span class="cruises__mini-info">Аргентина - Фолклендские острова - Антарктида</span>
+                  <p class="cruises__mini-text">Порт отправления</p>
+                  <span class="cruises__mini-info">Ушуайя</span>
+                  <p class="cruises__mini-text">Продолжительность</p>
+                  <span class="cruises__mini-info">11 дней</span>
+                  <p class="cruises__mini-text">Цена</p>
+                  <span class="cruises__mini-info">от 11500 $</span>
+                </div>
+                <a class="cruises__button" href="#booking" tabindex="0">Забронировать</a>
               </section>
             </li>
-            <li class="cruises__item cruises__item--elain">
+            <li class="cruises__item cruises__item--elain" tabindex="0">
               <h3 class="cruises__mini-title cruises__mini-title--first">Круиз “Элайн”</h3>
               <section class="cruises__section">
                 <h3 class="cruises__mini-title cruises__mini-title--second">Круиз “Элайн”</h3>
-                <p class="cruises__mini-text">Маршрут</p>
-                <span class="cruises__mini-info">Аргентина - Фолклендские острова - Антарктида - Чили</span>
-                <p class="cruises__mini-text">Порт отправления</p>
-                <span class="cruises__mini-info">Буэнос-Айрес</span>
-                <p class="cruises__mini-text">Продолжительность</p>
-                <span class="cruises__mini-info">20 дней</span>
-                <p class="cruises__mini-text">Цена</p>
-                <span class="cruises__mini-info">от 14500 $</span>
-                <a class="cruises__button" href="#booking">Забронировать</a>
+                <div class="cruises__div">
+                  <p class="cruises__mini-text">Маршрут</p>
+                  <span class="cruises__mini-info">Аргентина - Фолклендские острова - Антарктида - Чили</span>
+                  <p class="cruises__mini-text">Порт отправления</p>
+                  <span class="cruises__mini-info">Буэнос-Айрес</span>
+                  <p class="cruises__mini-text">Продолжительность</p>
+                  <span class="cruises__mini-info">20 дней</span>
+                  <p class="cruises__mini-text">Цена</p>
+                  <span class="cruises__mini-info">от 14500 $</span>
+                </div>
+                <a class="cruises__button" href="#booking" tabindex="0">Забронировать</a>
               </section>
             </li>
-            <li class="cruises__item cruises__item--atlantis">
+            <li class="cruises__item cruises__item--atlantis" tabindex="0">
               <h3 class="cruises__mini-title cruises__mini-title--first">Круиз “Атлантис”</h3>
               <section class="cruises__section">
                 <h3 class="cruises__mini-title cruises__mini-title--second">Круиз “Атлантис”</h3>
-                <p class="cruises__mini-text">Маршрут</p>
-                <span class="cruises__mini-info">Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</span>
-                <p class="cruises__mini-text">Порт отправления</p>
-                <span class="cruises__mini-info">Ушуайя</span>
-                <p class="cruises__mini-text">Продолжительность</p>
-                <span class="cruises__mini-info">15 дней</span>
-                <p class="cruises__mini-text">Цена</p>
-                <span class="cruises__mini-info">от 14500 $</span>
-                <a class="cruises__button" href="#booking">Забронировать</a>
+                <div class="cruises__div">
+                  <p class="cruises__mini-text">Маршрут</p>
+                  <span class="cruises__mini-info">Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</span>
+                  <p class="cruises__mini-text">Порт отправления</p>
+                  <span class="cruises__mini-info">Ушуайя</span>
+                  <p class="cruises__mini-text">Продолжительность</p>
+                  <span class="cruises__mini-info">15 дней</span>
+                  <p class="cruises__mini-text">Цена</p>
+                  <span class="cruises__mini-info">от 14500 $</span>
+                </div>
+                <a class="cruises__button" href="#booking" tabindex="0">Забронировать</a>
               </section>
             </li>
-            <li class="cruises__item cruises__item--odyssey">
+            <li class="cruises__item cruises__item--odyssey" tabindex="0">
               <h3 class="cruises__mini-title cruises__mini-title--first">Круиз "Одиссей"</h3>
               <section class="cruises__section">
                 <h3 class="cruises__mini-title cruises__mini-title--second">Круиз "Одиссей"</h3>
-                <p class="cruises__mini-text">Маршрут</p>
-                <span class="cruises__mini-info">Чили - Антарктида</span>
-                <p class="cruises__mini-text">Порт отправления</p>
-                <span class="cruises__mini-info">Пунта-Аренас</span>
-                <p class="cruises__mini-text">Продолжительность</p>
-                <span class="cruises__mini-info">13 дней</span>
-                <p class="cruises__mini-text">Цена</p>
-                <span class="cruises__mini-info">от 9700 $</span>
-                <a class="cruises__button" href="#booking">Забронировать</a>
+                <div class="cruises__div">
+                  <p class="cruises__mini-text">Маршрут</p>
+                  <span class="cruises__mini-info">Чили - Антарктида</span>
+                  <p class="cruises__mini-text">Порт отправления</p>
+                  <span class="cruises__mini-info">Пунта-Аренас</span>
+                  <p class="cruises__mini-text">Продолжительность</p>
+                  <span class="cruises__mini-info">13 дней</span>
+                  <p class="cruises__mini-text">Цена</p>
+                  <span class="cruises__mini-info">от 9700 $</span>
+                </div>
+                <a class="cruises__button" href="#booking" tabindex="0">Забронировать</a>
               </section>
             </li>
-            <li class="cruises__item cruises__item--olimpia">
+            <li class="cruises__item cruises__item--olimpia" tabindex="0">
               <h3 class="cruises__mini-title cruises__mini-title--first">Круиз "Олимпия"</h3>
               <section class="cruises__section">
                 <h3 class="cruises__mini-title cruises__mini-title--second">Круиз "Олимпия"</h3>
-                <p class="cruises__mini-text">Маршрут</p>
-                <span class="cruises__mini-info">Аргентина - Фолклендские острова - Южная Георгия - Антарктида</span>
-                <p class="cruises__mini-text">Порт отправления</p>
-                <span class="cruises__mini-info">Ушуайя</span>
-                <p class="cruises__mini-text">Продолжительность</p>
-                <span class="cruises__mini-info">21 день</span>
-                <p class="cruises__mini-text">Цена</p>
-                <span class="cruises__mini-info">от 18600 $</span>
-                <a class="cruises__button" href="#booking">Забронировать</a>
+                <div class="cruises__div">
+                  <p class="cruises__mini-text">Маршрут</p>
+                  <span class="cruises__mini-info">Аргентина - Фолклендские острова - Южная Георгия - Антарктида</span>
+                  <p class="cruises__mini-text">Порт отправления</p>
+                  <span class="cruises__mini-info">Ушуайя</span>
+                  <p class="cruises__mini-text">Продолжительность</p>
+                  <span class="cruises__mini-info">21 день</span>
+                  <p class="cruises__mini-text">Цена</p>
+                  <span class="cruises__mini-info">от 18600 $</span>
+                </div>
+                <a class="cruises__button" href="#booking" tabindex="0">Забронировать</a>
               </section>
             </li>
-            <li class="cruises__item cruises__item--avrora">
+            <li class="cruises__item cruises__item--avrora" tabindex="0">
               <h3 class="cruises__mini-title cruises__mini-title--first">Круиз “Аврора”</h3>
               <section class="cruises__section">
                 <h3 class="cruises__mini-title cruises__mini-title--second">Круиз “Аврора”</h3>
-                <p class="cruises__mini-text">Маршрут</p>
-                <span class="cruises__mini-info">Аргентина - Антарктида - Чили</span>
-                <p class="cruises__mini-text">Порт отправления</p>
-                <span class="cruises__mini-info">Ушуайя</span>
-                <p class="cruises__mini-text">Продолжительность</p>
-                <span class="cruises__mini-info">14 дней</span>
-                <p class="cruises__mini-text">Цена</p>
-                <span class="cruises__mini-info">от 11700 $</span>
-                <a class="cruises__button" href="#booking">Забронировать</a>
+                <div class="cruises__div">
+                  <p class="cruises__mini-text">Маршрут</p>
+                  <span class="cruises__mini-info">Аргентина - Антарктида - Чили</span>
+                  <p class="cruises__mini-text">Порт отправления</p>
+                  <span class="cruises__mini-info">Ушуайя</span>
+                  <p class="cruises__mini-text">Продолжительность</p>
+                  <span class="cruises__mini-info">14 дней</span>
+                  <p class="cruises__mini-text">Цена</p>
+                  <span class="cruises__mini-info">от 11700 $</span>
+                </div>
+                <a class="cruises__button" href="#booking" tabindex="0">Забронировать</a>
               </section>
             </li>
-            <li class="cruises__item cruises__item--leonor">
+            <li class="cruises__item cruises__item--leonor" tabindex="0">
               <h3 class="cruises__mini-title cruises__mini-title--first">Круиз “Леонор”</h3>
               <section class="cruises__section">
                 <h3 class="cruises__mini-title cruises__mini-title--second">Круиз “Леонор”</h3>
-                <p class="cruises__mini-text">Маршрут</p>
-                <span class="cruises__mini-info">Чили - Южная Георгия - Антарктида - Аргентина</span>
-                <p class="cruises__mini-text">Порт отправления</p>
-                <span class="cruises__mini-info">Пунта-Аренас</span>
-                <p class="cruises__mini-text">Продолжительность</p>
-                <span class="cruises__mini-info">17 дней</span>
-                <p class="cruises__mini-text">Цена</p>
-                <span class="cruises__mini-info">от 12500 $</span>
-                <a class="cruises__button" href="#booking">Забронировать</a>
+                <div class="cruises__div">
+                  <p class="cruises__mini-text">Маршрут</p>
+                  <span class="cruises__mini-info">Чили - Южная Георгия - Антарктида - Аргентина</span>
+                  <p class="cruises__mini-text">Порт отправления</p>
+                  <span class="cruises__mini-info">Пунта-Аренас</span>
+                  <p class="cruises__mini-text">Продолжительность</p>
+                  <span class="cruises__mini-info">17 дней</span>
+                  <p class="cruises__mini-text">Цена</p>
+                  <span class="cruises__mini-info">от 12500 $</span>
+                </div>
+                <a class="cruises__button" href="#booking" tabindex="0">Забронировать</a>
               </section>
             </li>
-            <li class="cruises__item cruises__item--minion-1">
+            <li class="cruises__item cruises__item--minion-1" tabindex="0">
               <h3 class="cruises__mini-title cruises__mini-title--first">Круиз “Минион - 1”</h3>
               <section class="cruises__section">
                 <h3 class="cruises__mini-title cruises__mini-title--second">Круиз “Минион - 1”</h3>
-                <p class="cruises__mini-text">Маршрут</p>
-                <span class="cruises__mini-info">Аргентина - Антарктида</span>
-                <p class="cruises__mini-text">Порт отправления</p>
-                <span class="cruises__mini-info"> Ушуайя</span>
-                <p class="cruises__mini-text">Продолжительность</p>
-                <span class="cruises__mini-info">11 дней</span>
-                <p class="cruises__mini-text">Цена</p>
-                <span class="cruises__mini-info">от 12300 $</span>
-                <a class="cruises__button" href="#booking">Забронировать</a>
+                <div class="cruises__div">
+                  <p class="cruises__mini-text">Маршрут</p>
+                  <span class="cruises__mini-info">Аргентина - Антарктида</span>
+                  <p class="cruises__mini-text">Порт отправления</p>
+                  <span class="cruises__mini-info"> Ушуайя</span>
+                  <p class="cruises__mini-text">Продолжительность</p>
+                  <span class="cruises__mini-info">11 дней</span>
+                  <p class="cruises__mini-text">Цена</p>
+                  <span class="cruises__mini-info">от 12300 $</span>
+                </div>
+                <a class="cruises__button" href="#booking" tabindex="0">Забронировать</a>
               </section>
             </li>
           </ul>
@@ -285,7 +281,9 @@
             <h2 class="contacts__title">У вас ещё остались вопросы или сомнения?
               Приезжайте<br class="break-line"> к нам <br class="break-line-tablet">в офис и мы вам все расскажем.</h2>
             <a class="contacts__address">г. Санкт Петербург,<br class="break-line"><br class="break-line-tablet"> ул. Большая Конюшенная, 19/8</a>
-            <a class="contacts__telephone" href="tel:+88002000000">8-800-200-00-00</a>
+            <div>
+              <a class="contacts__telephone" href="tel:+88002000000">8-800-200-00-00</a>
+            </div>
           </section>
         </div>
       </main>
@@ -295,7 +293,9 @@
             <picture class="footer__image">
               <source media="(max-width: 767px)" srcset="img/sprite/logo-mobile.svg">
               <source media="(max-width: 1023px)" srcset="img/sprite/logo-tablet.svg">
-              <img src="img/sprite/logo.svg" alt="Логотип.">
+              <a href="index.html">
+                <img src="img/sprite/logo.svg" alt="Логотип.">
+              </a>
             </picture>
             <nav class="footer__navigation">
               <ul class="footer__list">
@@ -350,7 +350,9 @@
           <nav class="header__navigation--mobile disp">
             <ul class="header__list--mobile">
               <li class="header__list--images">
-                <img src="img/sprite/logo-mobile-negative.svg" alt="Логотип.">
+                <a href="index.html">
+                  <img src="img/sprite/logo-mobile-negative.svg" alt="Логотип.">
+                </a>
                 <button class="header__menu--close-button">
                   <img src="img/sprite/x.svg" alt="Закрыть меню.">
                 </button>

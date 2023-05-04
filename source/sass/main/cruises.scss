@@ -5,6 +5,11 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.cruises__div {
+  max-height: 248px;
+  overflow-y: auto;
+}
+
 .cruises__title {
   font-weight: 600;
   font-size: 28px;
@@ -260,9 +265,11 @@
     padding: 0;
     display: grid;
     gap: 30px;
-    grid-template-columns: 270px;
+    grid-template-columns: 40% 40%;
     margin: 0 auto;
-    width: 270px;
+    // max-width: 648px;
+    justify-content: center;
+    width: auto;
   }
 
   .cruises__title {
@@ -275,6 +282,7 @@
 
   .cruises__item {
     min-height: 386px;
+    // width: 270px;
     padding-top: 29px;
   }
 
@@ -287,5 +295,22 @@
     padding-top: 9px;
     padding-bottom: 10px;
     margin-top: 27px;
+  }
+}
+
+@media (max-width: 517px) {
+  .cruises__item {
+    min-height: 386px;
+    width: 270px;
+    padding-top: 29px;
+  }
+
+  .cruises__list {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 270px;
+    gap: 30px;
+    margin: 0 auto;
+    width: 270px;
   }
 }

@@ -1,6 +1,10 @@
 .header {
+  position: absolute;
+  top: 0;
+  left: 50%;
   display: flex;
   z-index: 10;
+  margin-left: -580px;
 }
 
 .header__list {
@@ -12,6 +16,8 @@
   font-size: 16px;
   line-height: 20px;
   margin: 0;
+  flex-wrap: wrap;
+  width: 594px;
 }
 
 .header__item a {
@@ -27,8 +33,10 @@
 }
 
 .header__item {
+  padding: 5px 0;
+
   &:not(:last-of-type) {
-    margin-right: 33px;
+    margin-right: 35px;
   }
 
   &:hover {
@@ -60,6 +68,10 @@
     margin: 35px auto 0 auto;
     width: 960px;
   }
+
+  .header {
+    margin-left: -480px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -68,9 +80,14 @@
     margin: 30px auto 0 auto;
   }
 
+  .header {
+    margin-left: -339px;
+  }
+
   .header__list {
     font-size: 14px;
     line-height: 17px;
+    width: 504px;
   }
 
   .header__image {
@@ -95,6 +112,13 @@
 
     width: 100%;
     height: 100%;
+  }
+
+  .header {
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    width: 100%;
   }
 
   .header__image {

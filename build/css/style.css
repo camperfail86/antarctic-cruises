@@ -1347,6 +1347,8 @@ iframe {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 .footer__item:hover {
@@ -1384,10 +1386,14 @@ iframe {
 }
 
 .header {
+  position: absolute;
+  top: 0;
+  left: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   z-index: 10;
+  margin-left: -580px;
 }
 
 .header__list {
@@ -1401,6 +1407,9 @@ iframe {
   font-size: 16px;
   line-height: 20px;
   margin: 0;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 594px;
 }
 
 .header__item a {
@@ -1419,8 +1428,12 @@ iframe {
   justify-content: space-between;
 }
 
+.header__item {
+  padding: 5px 0;
+}
+
 .header__item:not(:last-of-type) {
-  margin-right: 33px;
+  margin-right: 35px;
 }
 
 .header__item:hover {
@@ -1442,6 +1455,8 @@ iframe {
   display: flex;
   padding: 0;
   margin: 0;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .socials__image:hover {
@@ -1450,6 +1465,11 @@ iframe {
 
 .socials__item a {
   height: 20px;
+  padding: 0 10px 10px 10px;
+}
+
+.socials__item a:first-of-type {
+  padding-left: 0;
 }
 
 .socials {
@@ -1462,7 +1482,7 @@ iframe {
 }
 
 .socials__item {
-  margin-right: 27px;
+  margin-right: 15px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1479,7 +1499,6 @@ iframe {
   background-position: center center;
   background-size: cover;
   min-height: 650px;
-  margin-top: -73px;
   padding-top: 270px;
   padding-left: 198px;
   padding-bottom: 247px;
@@ -1790,6 +1809,11 @@ iframe {
   font-family: "Montserrat", sans-serif;
 }
 
+.cruises__div {
+  max-height: 248px;
+  overflow-y: auto;
+}
+
 .cruises__title {
   font-weight: 600;
   font-size: 28px;
@@ -1943,6 +1967,13 @@ iframe {
   margin: 0 auto;
 }
 
+.contacts__info div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 168px;
+  grid-template-columns: 168px;
+}
+
 .contacts__title {
   width: 500px;
   margin: 75px 0 32px;
@@ -1973,6 +2004,7 @@ iframe {
   margin: 0;
   padding-left: 28px;
   position: relative;
+  margin-bottom: 5px;
 }
 
 .contacts__telephone::before {
@@ -2050,6 +2082,10 @@ iframe {
 
   .socials__item:last-child {
     margin-right: 0;
+  }
+
+  .socials {
+    margin-right: -6px;
   }
 }
 
@@ -2130,9 +2166,14 @@ iframe {
     margin: 30px auto 0 auto;
   }
 
+  .header {
+    margin-left: -339px;
+  }
+
   .header__list {
     font-size: 14px;
     line-height: 17px;
+    width: 504px;
   }
 
   .header__image {
@@ -2155,7 +2196,7 @@ iframe {
   }
 
   .socials__item {
-    margin-right: 22px;
+    margin-right: 9px;
   }
 
   .socials {
@@ -2165,6 +2206,11 @@ iframe {
 
   .socials__item a {
     height: 20px;
+    padding: 0 10px 10px 10px;
+  }
+
+  .socials__item a:first-of-type {
+    padding-left: 0;
   }
 
   .main-page {
@@ -2402,17 +2448,18 @@ iframe {
 
   .footer__item {
     margin-right: 0;
+    padding-top: 0;
   }
 
   .footer__item:not(:last-child) {
-    margin-bottom: 17px;
+    margin-bottom: 12px;
   }
 
   .footer {
     font-size: 12px;
     line-height: 15px;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 46px;
   }
 
   .header__modal {
@@ -2421,6 +2468,13 @@ iframe {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+
+  .header {
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    width: 100%;
   }
 
   .header__image {
@@ -2507,20 +2561,24 @@ iframe {
   }
 
   .socials {
-    margin-top: 30px;
+    margin-top: 12px;
   }
 
   .socials__list {
-    margin-top: -3px;
     margin-left: -3px;
   }
 
   .socials__item a {
     height: 20px;
+    padding: 10px;
+  }
+
+  .socials__item a:first-of-type {
+    padding-left: 0;
   }
 
   .socials__item {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 
   .main-page {
@@ -2530,7 +2588,7 @@ iframe {
     padding-left: 15px;
     min-height: 500px;
     padding-bottom: 178px;
-    padding-top: 191px;
+    padding-top: 175px;
   }
 
   .main-page__title {
@@ -2544,7 +2602,7 @@ iframe {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    width: 200px;
+    width: auto;
   }
 
   .travel {
@@ -2552,14 +2610,14 @@ iframe {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin: 0 auto;
-    width: 290px;
+    margin: 0 15px;
+    width: auto;
     padding-top: 66px;
     padding-bottom: 85px;
   }
 
   .travel__text {
-    width: 290px;
+    width: auto;
   }
 
   .travel__image {
@@ -2573,7 +2631,7 @@ iframe {
     font-weight: 600;
     font-size: 24px;
     line-height: 140%;
-    width: 209px;
+    width: auto;
     margin-bottom: 16px;
   }
 
@@ -2633,7 +2691,8 @@ iframe {
   }
 
   .booking__form {
-    width: 290px;
+    width: auto;
+    max-width: 500px;
     padding: 34px 30px 40px 30px;
   }
 
@@ -2649,6 +2708,9 @@ iframe {
   .booking__wrapper {
     padding-top: 60px;
     padding-bottom: 65px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100%;
   }
 
   .form__title {
@@ -2714,10 +2776,13 @@ iframe {
     display: -ms-grid;
     display: grid;
     gap: 30px;
-    -ms-grid-columns: 270px;
-    grid-template-columns: 270px;
+    -ms-grid-columns: 40% 40%;
+    grid-template-columns: 40% 40%;
     margin: 0 auto;
-    width: 270px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: auto;
   }
 
   .cruises__title {
@@ -2745,17 +2810,31 @@ iframe {
   }
 
   .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     position: relative;
     width: auto;
     padding-top: 58px;
-    padding-bottom: 417px;
+    padding-bottom: 59px;
   }
 
   .contacts__map {
-    position: absolute;
-    top: 322px;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
     width: 100%;
     margin: 0 auto;
+  }
+
+  .contacts__info div {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
   }
 
   .contacts__map iframe {
@@ -2764,6 +2843,7 @@ iframe {
     padding: 0 15px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    height: 316px;
   }
 
   .contacts__title {
@@ -2772,8 +2852,8 @@ iframe {
   }
 
   .contacts__info {
-    margin: 0 auto;
-    max-width: 290px;
+    margin: 0 15px 30px 15px;
+    max-width: 100%;
   }
 
   .contacts__telephone::before {
@@ -2865,6 +2945,35 @@ iframe {
   }
 }
 
+@media (max-width: 517px) {
+  .cruises__item {
+    min-height: 386px;
+    width: 270px;
+    padding-top: 29px;
+  }
+
+  .cruises__list {
+    padding: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 270px;
+    grid-template-columns: 270px;
+    gap: 30px;
+    margin: 0 auto;
+    width: 270px;
+  }
+}
+
+@media (max-width: 330px) {
+  .main-page__text {
+    width: 200px;
+  }
+
+  .travel__title {
+    width: 208px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .break-line-tablet {
     display: block;
@@ -2900,6 +3009,10 @@ iframe {
     width: 960px;
   }
 
+  .header {
+    margin-left: -480px;
+  }
+
   .travel {
     width: 960px;
   }
@@ -2915,6 +3028,15 @@ iframe {
 @media (max-width: 1023px) and (min-width: 767px) {
   .socials__item:last-child {
     margin-right: 0;
+  }
+
+  .socials__item {
+    margin-bottom: 7px;
+  }
+
+  .socials__list {
+    padding-left: 26px;
+    width: 122px;
   }
 }
 

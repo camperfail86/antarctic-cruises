@@ -6,7 +6,7 @@
   background-position: center center;
   background-size: cover;
   min-height: 650px;
-  margin-top: -73px;
+  // margin-top: -73px;
   padding-top: 270px;
   padding-left: 198px;
   padding-bottom: 247px;
@@ -57,7 +57,7 @@
     padding-left: 15px;
     min-height: 500px;
     padding-bottom: 178px;
-    padding-top: 191px;
+    padding-top: 175px;
   }
 
   .main-page__title {
@@ -71,6 +71,12 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
+    width: auto;
+  }
+}
+
+@media (max-width: 330px) {
+  .main-page__text {
     width: 200px;
   }
 }

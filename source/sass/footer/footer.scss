@@ -26,6 +26,8 @@
   margin-right: 33px;
   display: flex;
   align-items: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
 
   &:hover {
     opacity: 0.8;
@@ -125,9 +127,10 @@
 
   .footer__item {
     margin-right: 0;
+    padding-top: 0;
 
     &:not(:last-child) {
-      margin-bottom: 17px;
+      margin-bottom: 12px;
     }
   }
 
@@ -135,6 +138,6 @@
     font-size: 12px;
     line-height: 15px;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 46px;
   }
 }
