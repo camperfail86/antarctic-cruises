@@ -1429,7 +1429,7 @@ iframe {
 }
 
 .header__item {
-  padding: 5px 0;
+  padding: 0 0 5px 0;
 }
 
 .header__item:not(:last-of-type) {
@@ -2149,6 +2149,8 @@ iframe {
 
   .footer__item {
     margin-right: 23px;
+    padding-bottom: 5px;
+    padding-top: 0;
   }
 
   .footer__item a {
@@ -2217,7 +2219,7 @@ iframe {
     background-image: url("./../img/images/background.png");
     padding-left: 45px;
     min-height: 638px;
-    padding-top: 273px;
+    padding-top: 268px;
     padding-bottom: 275px;
   }
 
