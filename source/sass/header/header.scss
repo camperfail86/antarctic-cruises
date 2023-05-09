@@ -114,6 +114,15 @@
     height: 100%;
   }
 
+  .header__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 11%;
+    height: 100%;
+  }
+
   .header {
     top: 0;
     left: 0;
@@ -187,6 +196,8 @@
   .header__list--mobile {
     padding: 0;
     margin: 0;
+    max-height: 265px;
+    overflow-y: auto;
   }
 
   .header__list--images {
@@ -200,5 +211,12 @@
     height: 13px;
     margin-top: 3px;
     cursor: pointer;
+  }
+}
+
+@media (max-height: 290px) {
+  .header__list--mobile {
+    max-height: 100%;
+    overflow-y: auto;
   }
 }

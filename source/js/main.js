@@ -33,11 +33,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
 const burger = document.querySelector('.header__menu');
 const menu = document.querySelector('.header__navigation--mobile');
-const modal = document.querySelector('.header__modal');
+const modal = document.querySelector('.header__overlay');
 const x = document.querySelector('.header__menu--close-button');
 const image = document.querySelector('.header__image');
 const body = document.querySelector('body');
 const items = document.querySelectorAll('.header__item--mobile');
+const list = document.querySelector('.header__list--mobile');
 
 burger.addEventListener('click', () => {
   if (menu.classList.contains('disp') === true) {
@@ -68,6 +69,18 @@ x.addEventListener('click', () => {
   body.style.overflow = 'visible';
 });
 
+if (window.matchMedia('(min-height: 290px) and (max-width: 767px')) {
+  list.style.overflow = 'auto';
+  list.style.maxHeight = 'auto';
+}
+
+// const buttons = document.querySelectorAll('.cruises__button');
+// const cruises = document.querySelectorAll('.cruises__item');
+// for (let j = 0; j < cruises.length; j++) {
+//   if (buttons[j].contains('focus-visible')) {
+//     cruises.style.backgroundImage = 'none';
+//   }
+// }
 
 // const mapOptions = {
 //   center: [17.385044, 78.486671],

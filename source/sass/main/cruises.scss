@@ -6,7 +6,7 @@
 }
 
 .cruises__div {
-  max-height: 248px;
+  max-height: 229px;
   overflow-y: auto;
 }
 
@@ -25,6 +25,9 @@
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
   position: relative;
+  min-height: 386px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .cruises__list {
@@ -36,102 +39,263 @@
   width: 1130px;
 }
 
-.cruises__section {
-  display: none;
-}
-
 @media (min-resolution: 2dppx) {
-  .cruises__item--astoria {
-    background-image: url("./../img/cruises/astoria@2x.jpg");
-    background-size: 100% 100%;
-  }
-
-  .cruises__item--elain {
+  .cruises__bg--elain {
     background-image: url("./../img/cruises/minion-1@2x.jpg");
     background-size: 100% 100%;
   }
 
-  .cruises__item--atlantis {
+  .cruises__bg--atlantis {
     background-image: url("./../img/cruises/atlantis@2x.jpg");
     background-size: 100% 100%;
   }
 
-  .cruises__item--odyssey {
+  .cruises__bg--odyssey {
     background-image: url("./../img/cruises/odissey@2x.jpg");
     background-size: 100% 100%;
   }
 
-  .cruises__item--olimpia {
+  .cruises__bg--olimpia {
     background-image: url("./../img/cruises/olimpia@2x.jpg");
     background-size: 100% 100%;
   }
 
-  .cruises__item--avrora {
+  .cruises__bg--avrora {
     background-image: url("./../img/cruises/avrora@2x.jpg");
     background-size: 100% 100%;
   }
 
-  .cruises__item--leonor {
+  .cruises__bg--leonor {
     background-image: url("./../img/cruises/leonor@2x.jpg");
     background-size: 100% 100%;
   }
 
-  .cruises__item--minion-1 {
+  .cruises__bg--minion-1 {
     background-image: url("./../img/cruises/minion-1@2x.jpg");
     background-size: 100% 100%;
   }
 }
 
-.cruises__item--astoria {
+.cruises__bg--astoria {
   background-image: url("./../img/cruises/astoria.jpg");
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
 }
 
-.cruises__item--elain {
+.cruises__bg--elain {
   background-image: url("./../img/cruises/minion-1.jpg");
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
 }
 
-.cruises__item--atlantis {
+.cruises__bg--atlantis {
   background-image: url("./../img/cruises/atlantis.jpg");
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
 }
 
-.cruises__item--odyssey {
+.cruises__bg--odyssey {
   background-image: url("./../img/cruises/odissey.jpg");
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
 }
 
-.cruises__item--olimpia {
+.cruises__bg--olimpia {
   background-image: url("./../img/cruises/olimpia.jpg");
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
 }
 
-.cruises__item--avrora {
+.cruises__bg--avrora {
   background-image: url("./../img/cruises/avrora.jpg");
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
 }
 
-.cruises__item--leonor {
+.cruises__bg--leonor {
   background-image: url("./../img/cruises/leonor.jpg");
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
 }
 
-.cruises__item--minion-1 {
+.cruises__bg--minion-1 {
   background-image: url("./../img/cruises/minion-1.jpg");
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
 }
 
 .cruises__mini-title--second {
   display: none;
+  opacity: 0;
 }
 
-.cruises__item:hover {
+.cruises__mini-title--first {
+  display: block;
+  opacity: 1;
+  margin-top: 308px;
+  margin-bottom: 22px;
+  position: absolute;
+  bottom: 22px;
+  z-index: 1;
+}
+
+.cruises__section {
+  opacity: 0;
+}
+
+.cruises__button {
+  background-color: $color-white;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 26px;
+  margin-bottom: 34px;
+  color: $color-black;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  opacity: 0;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.cruises__button:focus ~ .cruises__section {
+  opacity: 1;
+}
+
+.cruises__button:focus {
+  opacity: 1;
+  z-index: 10;
+}
+
+.cruises__item:hover div {
   background-image: none;
+  z-index: 1;
+  display: none;
 }
 
-.cruises__item:hover section {
-  display: block;
+.cruises__item:focus div {
+  background-image: none;
+  z-index: 1;
 }
 
-.cruises__item:hover .cruises__mini-title--second {
-  display: block;
+.cruises__item:hover .cruises__button {
+  z-index: 10;
+}
+
+.cruises__item:focus .cruises__button {
+  z-index: 10;
+}
+
+.cruises__button:focus ~ div {
+  background-image: none;
+  z-index: 1;
+}
+
+.cruises__button:hover ~ div {
+  background-image: none;
+  z-index: 1;
+}
+
+.cruises__item:hover, .cruises__item:focus {
+  background-image: none;
+  z-index: 1;
+}
+
+.cruises__item:focus .cruises__button {
+  opacity: 1;
+  z-index: 1;
+}
+
+.cruises__item:hover .cruises__button {
+  opacity: 1;
+  z-index: 1;
+}
+
+.cruises__item:focus {
+  outline: 1px solid red;
+}
+
+.cruises__item:hover section, .cruises__item:focus section {
+  opacity: 1;
+  z-index: 1;
+}
+
+.cruises__item:hover .cruises__div {
+  z-index: 1;
 }
 
 .cruises__item:hover .cruises__mini-title--first {
   display: none;
+  opacity: 0;
+  z-index: 0;
+}
+
+.cruises__item:focus .cruises__mini-title--first {
+  display: none;
+  opacity: 0;
+  z-index: 0;
+}
+
+.cruises__button:focus ~ section .cruises__mini-title--second {
+  opacity: 1;
+  z-index: 1;
+  display: block;
+}
+
+.cruises__button:focus ~ .cruises__mini-title--first {
+  opacity: 0;
+  z-index: 0;
+  display: none;
+}
+
+.cruises__item:hover .cruises__mini-title--second, .cruises__item:focus .cruises__mini-title--second {
+  display: block;
+  opacity: 1;
+}
+
+.cruises__button:focus-visible {
+  outline: 2px solid red;
 }
 
 .cruises__mini-title {
@@ -140,11 +304,6 @@
   font-size: 18px;
   line-height: 150%;
   margin: 0;
-}
-
-.cruises__mini-title--first {
-  margin-top: 308px;
-  margin-bottom: 22px;
 }
 
 .cruises__mini-text {
@@ -160,28 +319,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
-}
-
-.cruises__button {
-  background-color: $color-white;
-  font-family: "Montserrat", sans-serif;
-  margin-top: 26px;
-  color: $color-black;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 150%;
-  border: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-
-  &:hover {
-    opacity: 0.8;
-  }
 }
 
 @media (max-width: 1160px) and (min-width: 1024px) {
@@ -205,7 +342,7 @@
 
 @media (max-width: 1023px) and (min-width: 768px) {
   .cruises__mini-title--first {
-    margin-bottom: 27px;
+    margin-bottom: 5px;
     margin-top: 304px;
   }
 
@@ -254,7 +391,7 @@
 @media (max-width: 767px) {
   .cruises__mini-title--first {
     margin-top: 314px;
-    margin-bottom: 8px;
+    margin-bottom: -6px;
   }
 
   .cruises__mini-text {
@@ -281,7 +418,7 @@
 
   .cruises__item {
     min-height: 386px;
-    padding-top: 29px;
+    padding-top: 11px;
   }
 
   .cruises {

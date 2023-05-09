@@ -1,6 +1,6 @@
 .socials__list {
   display: flex;
-  padding: 0;
+  padding: 0 4px 0 0;
   margin: 0;
   flex-wrap: wrap;
 }
@@ -13,19 +13,17 @@
 
 .socials__item a {
   height: 20px;
-  padding: 0 10px 10px 10px;
-
-  &:first-of-type {
-    padding-left: 0;
-  }
+  padding: 0 5px 15px;
 }
 
 .socials {
   display: flex;
   align-self: center;
+  margin-top: 10px;
 }
 
 .socials__item {
+  margin-bottom: 10px;
   margin-right: 15px;
   align-items: center;
   display: flex;
@@ -49,7 +47,7 @@
   }
 
   .socials__item {
-    margin-right: 9px;
+    margin-right: 10px;
   }
 
   .socials {
@@ -59,11 +57,7 @@
   .socials__item a {
     height: 20px;
 
-    padding: 0 10px 10px 10px;
-
-    &:first-of-type {
-      padding-left: 0;
-    }
+    padding: 0 5px 15px;
   }
 }
 
@@ -74,11 +68,14 @@
 
   .socials__item {
     margin-bottom: 7px;
+    height: 20px;
+    width: 25px;
   }
 
   .socials__list {
-    padding-left: 26px;
     width: 122px;
+    padding: 0 0 0 14px;
+    margin-left: 6px;
   }
 }
 
@@ -88,16 +85,14 @@
   }
 
   .socials__list {
-    margin-left: -3px;
+    margin-top: 10px;
+    margin-left: -8px;
+    padding: 0;
   }
 
   .socials__item a {
     height: 20px;
-    padding: 10px;
-
-    &:first-of-type {
-      padding-left: 0;
-    }
+    padding: 0 5px 0;
   }
 
   .socials__item {
