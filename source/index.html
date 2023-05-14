@@ -268,10 +268,10 @@
               <div class="booking__form form">
                 <p class="form__title">Оставьте заявку<br class="break-line"> и мы свяжемся с вами <br class="break-line">в ближайшее время</p>
                 <input class="form__input" type="text" placeholder="Имя" name="name" required>
-                <input class="form__input form__input--telephone" type="tel" placeholder="Телефон" name="telephone" required>
+                <input class="form__input form__input--telephone" type="tel" placeholder="Телефон" name="telephone" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" maxlength="11" required>
                 <input class="form__input" type="email" placeholder="Email" name="email" required>
                 <label class="form__checkbox form__text">
-                  <input class="form__input-checkbox visually-hidden" type="checkbox" name="agree">
+                  <input class="form__input-checkbox visually-hidden" type="checkbox" name="agree" required>
                   <span class="form__input-span"></span>
                   Я согласен на обработку моих персональных данных
                 </label>

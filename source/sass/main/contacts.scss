@@ -10,7 +10,7 @@
 
 .contacts__info div {
   display: grid;
-  grid-template-columns: 283px;
+  grid-template-columns: 450px;
 }
 
 .contacts__title {
@@ -109,6 +109,11 @@
       left: 0;
       content: url("./../img/svg/mark.svg");
     }
+  }
+
+  .contacts__info div {
+    display: grid;
+    grid-template-columns: 283px;
   }
 }
 

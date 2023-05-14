@@ -7,6 +7,10 @@
   margin-left: -580px;
 }
 
+.header__overlay {
+  cursor: pointer;
+}
+
 .header__list {
   display: flex;
   color: $color-white;
@@ -191,12 +195,13 @@
   .header__item--mobile {
     padding-left: 10px;
     margin-bottom: 26px;
+    width: 260px;
   }
 
   .header__list--mobile {
     padding: 0;
     margin: 0;
-    max-height: 265px;
+    max-height: 100%;
     overflow-y: auto;
   }
 

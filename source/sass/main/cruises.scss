@@ -323,16 +323,12 @@
 
 @media (max-width: 1160px) and (min-width: 1024px) {
   .cruises__list {
-    justify-content: center;
     padding: 0;
     display: grid;
-    gap: 25px;
-    grid-template-columns: 23% 23% 23% 23%;
+    gap: 30px;
+    grid-template-columns: 309px 309px;
     margin: 0 auto;
-    width: auto;
-    max-width: 1160px;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 648px;
   }
 
   .cruises__button {
@@ -401,11 +397,10 @@
   .cruises__list {
     padding: 0;
     display: grid;
+    grid-template-columns: 270px;
     gap: 30px;
-    grid-template-columns: 40% 40%;
     margin: 0 auto;
-    justify-content: center;
-    width: auto;
+    width: 270px;
   }
 
   .cruises__title {

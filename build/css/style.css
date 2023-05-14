@@ -1396,6 +1396,10 @@ iframe {
   margin-left: -580px;
 }
 
+.header__overlay {
+  cursor: pointer;
+}
+
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1498,7 +1502,6 @@ iframe {
   background-size: cover;
   min-height: 650px;
   padding-top: 270px;
-  padding-left: 198px;
   padding-bottom: 247px;
 }
 
@@ -1673,7 +1676,7 @@ iframe {
   background-color: #f9fbfd;
   border: none;
   min-height: 43px;
-  color: rgba(1, 28, 64, 0.7);
+  color: rgb(1, 28, 64);
   padding-left: 16px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -2118,8 +2121,8 @@ iframe {
 .contacts__info div {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 283px;
-  grid-template-columns: 283px;
+  -ms-grid-columns: 450px;
+  grid-template-columns: 450px;
 }
 
 .contacts__title {
@@ -2234,6 +2237,18 @@ iframe {
 
   .socials {
     margin-right: -6px;
+  }
+
+  .main-page__title {
+    width: 1024px;
+    margin: 0 auto;
+    padding-left: 27px;
+  }
+
+  .main-page__text {
+    padding-left: 27px;
+    width: 1024px;
+    margin: 12px auto 0 auto;
   }
 }
 
@@ -2539,6 +2554,13 @@ iframe {
     left: 0;
     content: url("./../img/svg/mark.svg");
   }
+
+  .contacts__info div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 283px;
+    grid-template-columns: 283px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2692,12 +2714,13 @@ iframe {
   .header__item--mobile {
     padding-left: 10px;
     margin-bottom: 26px;
+    width: 260px;
   }
 
   .header__list--mobile {
     padding: 0;
     margin: 0;
-    max-height: 265px;
+    max-height: 100%;
     overflow-y: auto;
   }
 
@@ -2931,14 +2954,11 @@ iframe {
     padding: 0;
     display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 270px;
+    grid-template-columns: 270px;
     gap: 30px;
-    -ms-grid-columns: 40% 40%;
-    grid-template-columns: 40% 40%;
     margin: 0 auto;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: auto;
+    width: 270px;
   }
 
   .cruises__title {
@@ -3201,20 +3221,14 @@ iframe {
 
 @media (max-width: 1160px) and (min-width: 1024px) {
   .cruises__list {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     padding: 0;
     display: -ms-grid;
     display: grid;
-    gap: 25px;
-    -ms-grid-columns: 23% 23% 23% 23%;
-    grid-template-columns: 23% 23% 23% 23%;
+    gap: 30px;
+    -ms-grid-columns: 309px 309px;
+    grid-template-columns: 309px 309px;
     margin: 0 auto;
-    width: auto;
-    max-width: 1160px;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 648px;
   }
 
   .cruises__button {

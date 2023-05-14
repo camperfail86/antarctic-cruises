@@ -39,10 +39,10 @@ const image = document.querySelector('.header__image');
 const body = document.querySelector('body');
 const items = document.querySelectorAll('.header__item--mobile');
 const list = document.querySelector('.header__list--mobile');
+const overlay = document.querySelector('.header__overlay');
 
 burger.addEventListener('click', () => {
   if (menu.classList.contains('disp') === true) {
-    // modal.style.visibility = 'visible';
     modal.style.background = 'rgba(0, 43, 102, 0.5)';
     menu.classList.remove('disp');
     image.classList.add('disp');
@@ -73,6 +73,14 @@ if (window.matchMedia('(min-height: 290px) and (max-width: 767px')) {
   list.style.overflow = 'auto';
   list.style.maxHeight = 'auto';
 }
+
+overlay.addEventListener('click', () => {
+  modal.style.background = 'rgba(0, 43, 102, 0)';
+  menu.classList.add('disp');
+  image.classList.remove('disp');
+  burger.classList.remove('disp');
+  body.style.overflow = 'visible';
+});
 
 // const buttons = document.querySelectorAll('.cruises__button');
 // const cruises = document.querySelectorAll('.cruises__item');
